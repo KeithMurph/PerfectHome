@@ -41,8 +41,8 @@ var questions = [{
 
 var score = 0;
 var currentQuestion = -1;
-var timeLeft = 0;
-var timer = null;
+
+
 
 
 
@@ -52,25 +52,13 @@ function start() {
 
     // timer function
 
-timeLeft = 60;
-document.getElementById("timeLeft").innerHTML = timeLeft;
-
-timer = setInterval(function() {
-    timeLeft--;
-    document.getElementById("timeLeft").innerHTML = timeLeft;
-    //if time reaches 0 end game function
-    if (timeLeft <= 0) {
-        clearInterval(timer);
-        endGame(); 
-    }
-}, 1000);
 
 next();
 }
 
 //stop the timer to end the game 
 function endGame() {
-clearInterval(timer);
+
 
 // dynamic script
 var quizContent = `
@@ -89,16 +77,15 @@ document.getElementById("quizBody").innerHTML = quizContent;
 function incorrect() {
 
 next();
-// console.log(incorrect)
+
 }
 
-// if correct +1 point
-// if correct no time change
+
 
 function correct() {
-score += 1;
+
 next();
-// console.log(correct)
+
 }
 
 //Bridge to next question

@@ -10,7 +10,7 @@ var questions = [{
 },
 {
     
-    title: "Whats kind of home will your new dog live in?",
+    title: "What kind of home will your new dog live in?",
     choices: ["Apartment", "House"],
     answer: "House"
     

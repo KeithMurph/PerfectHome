@@ -74,67 +74,20 @@ clearInterval(timer);
 
 // dynamic script
 var quizContent = `
-<h2>Game over!</h2>
-<h3> WOW you got ` + score +  ` /5!</h3>
-<input type="text" id="name" placeholder="First name"> 
-<button onclick="setScore()">Set score!</button>`;
+<h2>finding the perfect dog for you</h2>
+
+<button onclick="setScore()">View Dogs</button>`;
 
 document.getElementById("quizBody").innerHTML = quizContent;
 }
 
 
-//LOCAL Storage function TODO: deaal with last
-//store the scores on local storage
-function setScore() {
-localStorage.setItem("highscore", score);
-localStorage.setItem("highscoreName",  document.getElementById('name').value);
-getScore();
-}
-
-// retrieve from local storage
-function getScore() {
-var quizContent = `
-<h2>` + localStorage.getItem("highscoreName") + `'s highscore is:</h2>
-<h1>` + localStorage.getItem("highscore") + `</h1><br> 
-<button onclick="ClearScore()">CLEAR</button><button onclick="resetGame()">Play Again</button>
-`;
-
-document.getElementById("quizBody").innerHTML = quizContent;
-}
 
 
-function ClearScore() {
-localStorage.setItem("highscore", "");
-localStorage.setItem("highscoreName",  "");
-
-resetGame();
-}
-
-//reset the game 
-function resetGame() {
-clearInterval(timer);
-score = 0;
-currentQuestion = -1;
-timeLeft = 0;
-timer = null;
-
-document.getElementById("timeLeft").innerHTML = timeLeft;
 
 
-// start screen after you've already played
-var quizContent = `
-<h1>So it's time to retake the Super Cool Quiz!</h1>
-<h3>Want to play more?</h3>
-<h3>Want to be on the Leaderboard?<h3>
-<button onclick="start()">PlayHARDERthisTime</button>`;
-
-document.getElementById("quizBody").innerHTML = quizContent;
-}
-
-// incorrect answers deduct 10s
-//  incorect answers 0 points
 function incorrect() {
-timeLeft -= 10; 
+
 next();
 // console.log(incorrect)
 }

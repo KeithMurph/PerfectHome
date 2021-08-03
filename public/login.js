@@ -6,7 +6,7 @@ loginForm.addEventListener("submit",event=>{
     fetch("/api/users/login",{
         method:"POST",
         body:JSON.stringify({
-            email: document.querySelector("#loginEmail").value,
+            username: document.querySelector("#loginUsername").value,
             password: document.querySelector("#loginPassword").value,
         }),
         headers:{

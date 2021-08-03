@@ -1,6 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
-const bcrypt = require("bcrypt")
 
 class Favorite extends Model {}
 
@@ -23,5 +22,6 @@ Favorite.init({
     underscored: true,
     modelName: 'favorite'
 })
+
 
 module.export = Favorite

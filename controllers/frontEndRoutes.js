@@ -45,19 +45,24 @@ router.get("/signUp", (req,res) =>{
     res.render("createUser")
 })
 
-router.get("/profile", withAuth, (req,res) =>{
-    if(req.session.user){
-     db.User.findByPk(req.session.user.id,{
-         include:[db.User, db.Preferences, db.Favorite]
-     }).then(userData =>{
-         const userJson = userData.get({plain:true})
-         console.log(userJson)
-         res.render("profile", userJson)
+router.get('/survey', (req,res)=>{
+    res.render('survey');
+})
+
+router.get("/profile", (req,res) =>{
+    // if(req.session.user){
+    //  db.User.findByPk(req.session.user.id,{
+    //      include:[db.User, db.Preferences, db.Favorite]
+    //  }).then(userData =>{
+    //      const userJson = userData.get({plain:true})
+    //      console.log(userJson)
+         res.render("profile")
+        //  , userJson)
      })
      
- } else{
-     res.redirect("/login")
- }
- })
+//  } else{
+//      res.redirect("/login")
+//  }
+//  })
 
 module.exports = router

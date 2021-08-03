@@ -11,9 +11,6 @@ Favorite.belongsTo(User, {
     foreignKey: 'user_id',
 });
 
-User.belongsTo(Preferences, {
-    foreignKey: 'user_id',
-});
 
 Preferences.belongsTo(User, {
     foreignKey: 'user_id',

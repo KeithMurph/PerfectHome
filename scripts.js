@@ -1,40 +1,76 @@
-// Questions for Breed selector survey
+// Questions for Dog selector survey
 
 var questions = [{
 
 
-    title: "Are you an experiened dog owner?",
-    choices: ["Yes", "No"],
-    answer: "Yes"
+    title: "Are you looking for a Dog or Cat?",
+    choices: ["Dog", "Cat"],
+  
+    // should set search parameter to Dog or Cat
     
 },
 {
     
-    title: "What kind of home will your new dog live in?",
+    title: "What kind of home will your new pet live in?",
     choices: ["Apartment", "House"],
-    answer: "House"
+   
+    // should set house size to Large or Small
     
 },
 {
-    title: "How much outdoor space do you have for your new dog?",
-    choices: ["No yard", "Small Backyard", "Large Backyard"],
-   answer: "Small Backyard"
+    title: "Do you have a yard for your new pet?",
+    choices: ["No yard", "I have a backyard"],
+  
+//    should set parameter has_yard to True or False
 },
 {
     title: "Do you live with other pets?",
-    choices: ["No Pets", "dogs", "Cats", "other"],
-    answer: "dogs"
+    choices: ["No Pets", "Other Dogs", "Other Cats"],
+    
+    // select all that apply 
+    // good_with_dogs true or false
+    // good_with_cats
 },
 {
     title: "Do you have children",
     choices: ["No", "Yes"],
-    answer: "No"
+   
+    // good_with_children true or false
+
 },
+// only display if "dog" was selected in first question
 {
     title: "How big of a dog can you handle?",
-    choices: ["Small(by weight)", "Medium", "Large", "I dont care"],
-    answer: "I dont care"
+    choices: ["Small", "Medium", "Large", "I dont care"],
+ 
+    // set parameter to small, medium or Large 
+},
+{
+    title: "Is the age of your pet important to you?",
+    choices: ["Baby", "Young", "Adult", "Senior", "I dont care"],
+    
+    // set parameter to Baby, Young, Adult, senior
+},
+// if cat next question
+{
+    title: "Are you looking for a declawed cat?",
+    choices: ["Yes", "wtf no"],
+    
+    // set parameter to has_claws to true or false
+},
+{
+    title: "Are you looking for a pet that is spayed/neutered?",
+    choices: ["Yes", "No"],
+    
+    // set parameter to spayed_neutered to true or false
+
+},
+{
+    title: "Are you willing to take on a special needs pet?",
+    choices: ["Yes", "No"]
+    // set parameter special_needs to true or false
 }
+
 ]
 
 
@@ -62,9 +98,9 @@ function endGame() {
 
 // dynamic script
 var quizContent = `
-<h2>finding the perfect dog for you</h2>
+<h2>finding the perfect Pet for you</h2>
 
-<button onclick="setScore()">View Dogs</button>`;
+<button onclick="setScore()">View Pets</button>`;
 
 document.getElementById("quizBody").innerHTML = quizContent;
 }

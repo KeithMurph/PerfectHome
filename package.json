@@ -1,0 +1,21 @@
+{
+  "name": "PerfectHome",
+  "version": "1.0.0",
+  "description": "-AS A USER I WANT TO FIND A PET(DOG/CAT) THATS PERFECT FOR ME AND MY FAMILY",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KeithMurph/PerfectHome.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KeithMurph/PerfectHome/issues"
+  },
+  "homepage": "https://github.com/KeithMurph/PerfectHome#readme"
+}

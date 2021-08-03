@@ -24,4 +24,4 @@ Favorite.init({
 })
 
 
-module.export = Favorite
+module.exports = Favorite

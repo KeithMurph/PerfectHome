@@ -23,4 +23,5 @@ Favorite.init({
     modelName: 'favorite'
 })
 
-module.exports = Favorite
+
+module.export = Favorite

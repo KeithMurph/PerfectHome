@@ -15,6 +15,26 @@ const withAuth = require('../utils/auth');
 //     })
 // })
 
+// const { Adoptable } = require('../models');
+// const petsData = require('../seeds/petsData.json')
+
+router.get('/', async (req, res) => {
+    try {
+
+    //   const randomPets = Adoptable(Math.floor(Math.random() * petsData.length))
+    //   const adoptableData = await randomPets.findAll();
+  
+    //   const adoptableJson = adoptableData.map((adoptable => adoptable.get({ plain: true })));
+  
+      res.render('homepage', { 
+        // adoptableJson, 
+        logged_in: req.session.logged_in 
+      });
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
+
 router.get("/login", (req,res) =>{
     if(req.session.loggedIn){
       res.redirect("/")  

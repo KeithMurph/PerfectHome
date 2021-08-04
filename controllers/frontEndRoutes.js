@@ -3,6 +3,18 @@ const router = express.Router();
 const db = require('../models');
 const withAuth = require('../utils/auth');
 
+// router.get("/", (req,res) => {
+//     db.Post.findAll({
+//         //finding user info with the posts
+//         include: [db.User]
+//     }).then(data => {
+//         const allPost = data.map(post=> post.get({
+//             plain:true
+//         }))
+//         res.render("allPost", {layout:"dashboard", allPost})
+//     })
+// })
+
 // const { Adoptable } = require('../models');
 // const petsData = require('../seeds/petsData.json')
 
@@ -22,7 +34,6 @@ router.get('/', async (req, res) => {
       res.status(500).json(err);
     }
   });
-
 
 router.get("/login", (req,res) =>{
     if(req.session.loggedIn){

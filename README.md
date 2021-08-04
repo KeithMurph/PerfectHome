@@ -1,4 +1,12 @@
-# PerfectHome
+# Perfect Home
 
--AS A USER I WANT TO FIND A PET(DOG/CAT) THATS PERFECT FOR ME AND MY FAMILY
+## User Story
+AS A user,
+I WANT to find a pet (dog/cat)
+THAT is perfect for me and my family
 
+## Mock Up
+
+## Contributors
+
+## Links

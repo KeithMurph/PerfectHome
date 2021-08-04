@@ -3,9 +3,9 @@ const dogBreedInput = document.querySelector("#breed-info")
 //grabs dog breed name
 function getDogBreedInput(event){
     event.preventDefault();
-    const dogBreed = dogBreedInput.value
+    
 };
-
+const dogBreed = dogBreedInput.value
 //search api for dog breed
 function getDogBreedData(dogBreed){
     const dogApiUrl = 

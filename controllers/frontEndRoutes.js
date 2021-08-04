@@ -72,12 +72,17 @@ router.get("/profile", withAuth, (req,res) =>{
          const userJson = userData.get({plain:true})
          console.log(userJson)
          res.render("profile", userJson)
+     }).catch(err=>{
+         res.status(500).json(err)
      })
-     
+    }}
+)
+    
+    
 //  } else{
 //      res.redirect("/login")
 //  }
-//  })
+ 
 
 
  //get favorite pets

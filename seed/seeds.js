@@ -12,4 +12,31 @@ const seedDatabase = async () => {
   process.exit(0);
 };
 
+const seedMe = async () => {
+    await sequelize.sync({ force: true });
+    await db.User.bulkCreate([
+      {
+        username: "keith",
+        email: "keith@keith.keith",
+        password: "password"
+      },
+      {
+        username: "Meg",
+        email: "Meg@meg.meg",
+        password: "password"
+      },
+      {
+        username: "karen",
+        email: "karen@karen.karen",
+        password: "password"
+      },
+      {
+        username: "connor",
+        email: "connor@connor.connor",
+        password: "password"
+      }
+    ]);
+
 seedDatabase();
+
+seedMe();

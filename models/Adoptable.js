@@ -54,7 +54,7 @@ Adoptable.init({
         type:DataTypes.BOOLEAN
     },
     image_url:{
-        type:DataTypes.STRING
+        type:DataTypes.TEXT
     },
     user_id:{
         type:DataTypes.INTEGER,
@@ -69,7 +69,7 @@ Adoptable.init({
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'preferences'
+    modelName: 'adoptable'
 })
 
-module.exports = Preferences
+module.exports = Adoptable

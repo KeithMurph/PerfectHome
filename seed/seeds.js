@@ -1,12 +1,13 @@
 const sequelize = require('../config/connection');
-const { User, Project } = require('../models');
+const { User, Project, Adoptable} = require('../models');
 const seedPets = require('./petsData');
+
 
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
 
-  await seedPets()
+  await Adoptable.bulkCreate(seedPets)
   
   process.exit(0);
 };

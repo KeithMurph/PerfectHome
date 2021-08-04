@@ -46,4 +46,8 @@ router.post("/login",(req,res)=>{
     })
 })
 
+//get profile
+
+//get favorite pets
+
 module.exports= router

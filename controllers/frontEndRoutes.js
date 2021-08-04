@@ -35,6 +35,7 @@ router.get('/', async (req, res) => {
     }
   });
 
+  //login
 router.get("/login", (req,res) =>{
     if(req.session.loggedIn){
       res.redirect("/")  
@@ -43,11 +44,13 @@ router.get("/login", (req,res) =>{
     res.render("login")
 })
 
+//log out
 router.get("/logout", (req,res)=>{
     req.session.destroy();
     res.send("logged out");
 })
 
+//sign up
 router.get("/signUp", (req,res) =>{
     if(req.session.loggedIn){
         res.redirect("/")  
@@ -56,6 +59,7 @@ router.get("/signUp", (req,res) =>{
     res.render("createUser")
 })
 
+//get profile
 router.get("/profile", withAuth, (req,res) =>{
     if(req.session.user){
      db.User.findByPk(req.session.user.id,{
@@ -71,4 +75,6 @@ router.get("/profile", withAuth, (req,res) =>{
  }
  })
 
+
+ //get favorite pets
 module.exports = router

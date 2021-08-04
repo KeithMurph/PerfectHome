@@ -59,7 +59,11 @@ router.get("/signUp", (req,res) =>{
     res.render("createUser")
 })
 
-//get profile
+router.get('/survey', (req,res)=>{
+    res.render('survey');
+})
+
+
 router.get("/profile", withAuth, (req,res) =>{
     if(req.session.user){
      db.User.findByPk(req.session.user.id,{
@@ -70,10 +74,10 @@ router.get("/profile", withAuth, (req,res) =>{
          res.render("profile", userJson)
      })
      
- } else{
-     res.redirect("/login")
- }
- })
+//  } else{
+//      res.redirect("/login")
+//  }
+//  })
 
 
  //get favorite pets

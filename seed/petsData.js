@@ -1,4 +1,4 @@
-[
+const petsData = [
     {
         name: "Calvin" ,
         description:"Calvin is a fun loving guy who loves to play ball!",
@@ -1003,3 +1003,5 @@
         image_url:"https://i.postimg.cc/NM3yCY1q/18-C1-A68-B-4-F0-B-4-BA9-B96-D-BF0750634-FAD.jpg"
     }
 ]
+
+module.exports = petsData

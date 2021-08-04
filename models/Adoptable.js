@@ -1,9 +1,22 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Preferences extends Model {}
+class Adoptable extends Model {}
 
-Preferences.init({
+Adoptable.init({
+    id: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        primaryKey: true,
+        autoIncrement: true,
+      },
+    name:{
+        type:DataTypes.STRING,
+        allowNull:false
+    },
+    description: {
+        type:DataTypes.STRING
+    },
     type:{
         type:DataTypes.STRING
     },
@@ -29,7 +42,7 @@ Preferences.init({
         type:DataTypes.BOOLEAN
     },
     has_yard:{
-        type:DataTypes.STRING
+        type:DataTypes.BOOLEAN
     },
     has_claws:{
         type:DataTypes.BOOLEAN
@@ -39,6 +52,9 @@ Preferences.init({
     },
     special_needs:{
         type:DataTypes.BOOLEAN
+    },
+    image_url:{
+        type:DataTypes.STRING
     },
     user_id:{
         type:DataTypes.INTEGER,

@@ -37,6 +37,8 @@ const seedMe = async () => {
       }
     ]);
 
+}
+
 seedDatabase();
 
 seedMe();

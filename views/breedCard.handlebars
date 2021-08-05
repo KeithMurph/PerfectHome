@@ -1,17 +1,27 @@
 
+<form class="breed-info-form" method="GET" >
+    <div class="form-group">
+        <label id="breed-name">
+            Search by Breed Name:         
+        </label>
+        <input class="form-input" type="text" name="breed" id="breed-info" />
+         <button class="btn btn-primary" id="dog-breed-btn">Enter</button>
+    </div>
+
+</form>
 
 <div>
     <div>
         <img src="{{image_url}}" alt="dog picture" height="300px">
     </div>
     <h2>Breed</h2>
-    <h4>{{breed}}</h4>
+    <p>{{breed}}</p>
     <h3>Size</h3> 
-    <h4>{{size}}</h4>
+    <p>{{size}}</p>
     <h3>Home Requirement </h3> 
-    <h4>{{home_requirement}}</h4>
+    <p>{{home_requirement}}</p>
     <h3>Temperament</h3> 
-    <h4>{{temperament}}</h4>
+    <p>{{temperament}}</p>
    
 </div>
 

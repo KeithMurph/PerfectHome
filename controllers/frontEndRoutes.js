@@ -63,6 +63,9 @@ router.get('/survey', (req,res)=>{
     res.render('survey');
 })
 
+router.get("/breedSearch", (req,res)=> {
+    res.render("breedInfo")
+})
 
 router.get("/profile", withAuth, (req,res) =>{
     if(req.session.user){
@@ -77,6 +80,18 @@ router.get("/profile", withAuth, (req,res) =>{
      })
     }}
 )
+
+router.get("/breeds/:breed",(req,res)=> {
+  db.Breed.findByPk(req.params.breed).then(breed=>{
+    
+      const breedJson = breed.get({plain:true})
+      
+      res.render("breedCard",breedJson);
+  }).catch(err=>{
+      console.log(err);
+      res.status(500).json({message:"No breed found!"})
+  })
+})
     
     
 //  } else{

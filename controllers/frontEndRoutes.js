@@ -35,6 +35,7 @@ router.get('/', async (req, res) => {
     }
   });
 
+  //login
 router.get("/login", (req,res) =>{
     if(req.session.loggedIn){
       res.redirect("/")  
@@ -43,11 +44,13 @@ router.get("/login", (req,res) =>{
     res.render("login")
 })
 
+//log out
 router.get("/logout", (req,res)=>{
     req.session.destroy();
     res.send("logged out");
 })
 
+//sign up
 router.get("/signUp", (req,res) =>{
     if(req.session.loggedIn){
         res.redirect("/")  
@@ -55,6 +58,11 @@ router.get("/signUp", (req,res) =>{
       }
     res.render("createUser")
 })
+
+router.get('/survey', (req,res)=>{
+    res.render('survey');
+})
+
 
 router.get("/profile", withAuth, (req,res) =>{
     if(req.session.user){
@@ -64,11 +72,18 @@ router.get("/profile", withAuth, (req,res) =>{
          const userJson = userData.get({plain:true})
          console.log(userJson)
          res.render("profile", userJson)
+     }).catch(err=>{
+         res.status(500).json(err)
      })
-     
- } else{
-     res.redirect("/login")
- }
- })
+    }}
+)
+    
+    
+//  } else{
+//      res.redirect("/login")
+//  }
+ 
 
+
+ //get favorite pets
 module.exports = router

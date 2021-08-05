@@ -2,7 +2,8 @@ const Favorite = require('./Favorite');
 const Preferences = require('./Preferences');
 const User = require('./User')
 const Adoptable = require("./Adoptable")
-const Post = require("./Post");
+const Breed = require("./Breed")
+
 
 User.hasMany(Favorite, {
     foreignKey: 'user_id',
@@ -30,5 +31,6 @@ module.exports = {
     Favorite,
     Preferences,
     Adoptable,
-    Post
+    Breed
+
 };

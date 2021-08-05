@@ -19,12 +19,12 @@ Preferences.belongsTo(User, {
     foreignKey: 'user_id',
 });
 
-User.hasMany(Post,{
-    onDelete:"CASCADE",
-    foreignKey:{
-        allowNull:false
-    }
-});
+// User.hasMany(Post,{
+//     onDelete:"CASCADE",
+//     foreignKey:{
+//         allowNull:false
+//     }
+// });
 
 module.exports = {
     User,

@@ -55,7 +55,7 @@ router.post("/login",(req,res)=>{
 
 // Get all users
 router.get('/',(req,res)=>{
-    User.findAll().then(userData=>{
+    db.User.findAll().then(userData=>{
         res.json(userData)
     }).catch(err=>{
         console.log(err);

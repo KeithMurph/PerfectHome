@@ -49,7 +49,7 @@ router.get("/login", (req,res) =>{
 //log out
 router.get("/logout", (req,res)=>{
     req.session.destroy();
-    res.send("logged out");
+    res.alert("logged out");
 })
 
 //sign up

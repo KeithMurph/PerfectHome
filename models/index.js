@@ -4,6 +4,7 @@ const User = require('./User')
 const Adoptable = require("./Adoptable")
 const Breed = require("./Breed")
 
+
 User.hasMany(Favorite, {
     foreignKey: 'user_id',
     onDelete: 'CASCADE'
@@ -18,10 +19,18 @@ Preferences.belongsTo(User, {
     foreignKey: 'user_id',
 });
 
+User.hasMany(Post,{
+    onDelete:"CASCADE",
+    foreignKey:{
+        allowNull:false
+    }
+});
+
 module.exports = {
     User,
     Favorite,
     Preferences,
     Adoptable,
     Breed
+
 };

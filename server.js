@@ -1,5 +1,6 @@
 const express = require('express');
 const sequelize = require("./config/connection")
+require("dotenv").config();
 // Sets up the Express App
 // =============================================================
 const app = express();

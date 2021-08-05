@@ -6,9 +6,125 @@
             <h1>Find a Dog That matches you</h1>
             
             <h1>🐕Find a Dog That matches you🏡</h1>
-            <h3>Click to take survey</h3>
-            <!-- add onclick to javascript -->
-            {{!-- <button onclick="start()">Start 🐶</button> --}}
+            </div>
+		<!--main body of quiz-->
+		<div id="quiz">
+            <div id="quizBody">      
+                <!-- -->
+                <h1>PerfectHome survey</h1>
+				<!-- pet type -->
+                <h3>What kind of pet are you looking for?</h3>
+				<select name="petType" id="type">
+					
+					 <option value="Dog">Dog</option>
+					<option value="Cat">Cat</option>
+					</select>
+					<button id="petTypeBtn">submit</button>
+
+
+					
+
+					<!-- home type -->
+					<h3>What kind home will your new pet live in?</h3>
+				<select name="homeType" id="house_size">
+				
+					 <option value="Apartment">Apartment</option>
+					<option value="House">House</option>
+					</select>
+					<button type="submit" id="homeTypeBtn">submit</button>
+
+					<!-- yard type -->
+					<h3>Do you have a yard for your new pet?</h3>
+				<select name="yardType" id="has_yard">
+					
+					 <option value="true">Yes</option>
+					<option value="false">No</option>
+					</select>
+					<button type="submit" id="yardTypeBtn">submit</button>
+
+					<!-- other dogs  -->
+					<h3>Do you currently have dog(s) at home?</h3>
+					<select name="otherdog" id="good_with_dogs">
+						
+						 <option value="true">Yes</option>
+						<option value="false">No</option>
+						</select>
+						<button type="submit" id="otherDogBtn">submit</button>
+
+					<!-- other cats -->
+					<h3>Do you currently have cat(s) at home?</h3>
+					<select name="otherCat" id="good_with_cats">
+						
+						 <option value="true">Yes</option>
+						<option value="false">No</option>
+						</select>
+						<button type="submit" id="otherCatBtn">submit</button>
+
+						<!-- children -->
+
+						<h3>Do you have children in your home?</h3>
+						<select name="children" id="good_with_children">
+							
+							 <option value="true">Yes</option>
+							<option value="fasle">No</option>
+							</select>
+							<button type="submit" id="childrenBtn">submit</button>
+
+							<!-- pet size -->
+							<h3>Does the Size of your new pet matter to you?</h3>
+							<select name="petSize" id="size">
+								
+								 <option value="Large">Large</option>
+								<option value="Medium">Medium</option>
+								<option value="Small">Small</option>
+								<option value="">Does not matter</option>
+								</select>
+								<button type="submit" id="petSizeBtn">submit</button>
+
+								<!-- pet age -->
+								<h3>Is the age of the pet important to you?</h3>
+								<select name="petAge" id="age">
+									
+									 <option value="Baby">Baby</option>
+									<option value="Young">Young</option>
+									<option value="Adult">Adult</option>
+									<option value="Senior">Senior</option>
+									<option value="">Does not matter</option>
+
+									</select>
+									<button type="submit" id="petAgeBtn">submit</button>
+
+									<!-- declawed -->
+									<h3>Does your new pet need to be declawed</h3>
+									<select name="clawed" id="has_claws">
+										
+										 <option value="true">Yes</option>
+										<option value="fasle">No....</option>
+										</select>
+										<button type="submit" id="clawedBtn">submit</button>
+
+									<!-- spayed or neutered  -->
+									<h3>Are you looking for a pet that is already Spayed/Neutered</h3>
+									<select name="spayed" id="spayed">
+										
+										 <option value="true">Yes</option>
+										<option value="false">No</option>
+										</select>
+										<button type="submit" id="spayedBtn">submit</button>
+
+										<!-- speacial needs pet -->
+										<h3>Are you willing to take on a special needs pet?</h3>
+										<select name="special" id="special_needs">
+											
+											 <option value="true">Yes</option>
+											<option value="false">No</option>
+											</select>
+											<button type="submit" id="specialBtn">submit</button>
+
+
+											
+            </div>
+            
         </div>
     </div>
 

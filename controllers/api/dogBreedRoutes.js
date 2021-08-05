@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const db = require('../../models');
+const Breed = require('../../models/Breed')
 const { route } = require('./findAnimalsRoutes');
 
 //get all dog breeds
@@ -12,8 +13,6 @@ router.get("/", (req,res) => {
         res.status(500).json(err);
     })
 })
-
-
 
 
 

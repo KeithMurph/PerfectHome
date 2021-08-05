@@ -66,6 +66,7 @@ router.get('/',(req,res)=>{
     })
 })
 
+
 // Get user by ID
 router.get('/:id', async (req,res) => {
     try{
@@ -87,5 +88,6 @@ router.get('/:id', async (req,res) => {
 //get profile
 
 //get favorite pets
+
 
 module.exports= router

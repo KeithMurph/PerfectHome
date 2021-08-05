@@ -1,4 +1,5 @@
 const signupForm = document.querySelector("#signup-form");
+
 signupForm.addEventListener("submit",(e)=>{
     e.preventDefault();
     const authObj={
@@ -24,3 +25,4 @@ signupForm.addEventListener("submit",(e)=>{
         }
     })
 })
+

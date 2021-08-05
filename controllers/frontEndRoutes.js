@@ -66,7 +66,9 @@ router.get('/survey', (req,res)=>{
 })
 
 router.get("/breedSearch", (req,res)=> {
+
   res.render("breedInfo")
+
 })
 
 router.get("/profile", withAuth, (req,res) =>{
@@ -82,6 +84,7 @@ router.get("/profile", withAuth, (req,res) =>{
      })
     }}
 )
+
   
 // Session route to check if logged in
 router.get("/session",(req,res)=>{
@@ -130,5 +133,20 @@ router.get("/profile/:id",(req,res)=>{
 })
 
 
+
+router.get("/breeds/:breed",(req,res)=> {
+  db.Breed.findByPk(req.params.breed).then(breed=>{
+    const breedJson = breed.get({plain:true})
+    res.render("breedCard", breedJson)
+      // // console.log("breed:",breedJson.breed)
+      // res.render("breedCard", breedJson);
+      // res.json(breed.dataValue.breed)
+      // console.log(breed)
+  }).catch(err=>{
+      console.log(err);
+      res.status(500).json({message:"No breed found!"})
+  })
+})
+    
  //get favorite pets
 module.exports = router

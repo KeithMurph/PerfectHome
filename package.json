@@ -21,7 +21,6 @@
   },
   "homepage": "https://github.com/KeithMurph/PerfectHome#readme",
   "dependencies": {
-    "bcrpyt": "^2.0.0",
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.1",
     "dotenv": "^10.0.0",

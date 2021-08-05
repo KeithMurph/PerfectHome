@@ -133,7 +133,6 @@ router.get("/profile/:id",(req,res)=>{
 })
 
 
-
 router.get("/breeds/:breed",(req,res)=> {
   db.Breed.findByPk(req.params.breed).then(breed=>{
     const breedJson = breed.get({plain:true})

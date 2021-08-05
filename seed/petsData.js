@@ -1,7 +1,7 @@
 const petsData = [
     {
         name: "Calvin" ,
-        description:"Calvin is a fun loving guy who loves to play ball!",
+        description:"Calvin is a fun loving guy who loves to play ball! They are good with children, dogs,and cats. He is neutered with no special needs.",
         type: "Dog" ,
         breed: "German Shepard",
         size: "Large" ,
@@ -18,7 +18,7 @@ const petsData = [
     },
     {
         name: "Json",
-        description:"Json is a happy go lucky pup who will protect your home.",
+        description:"Json is a happy go lucky pup who will protect your home.They are good with children, dogs,and cats. He is neutered with no special needs.",
         type: "Dog",
         breed: "German Shepard",
         size: "Large" ,
@@ -35,7 +35,7 @@ const petsData = [
     },
     {
         name: "Khalessi",
-        description: "She is an excitable puppy who loves to play with her littermates. She was born blind and will need special care.",
+        description: "She is an excitable puppy who loves to play with her littermates. She was born blind and will need special care.They are good with children, dogs,and cats. He is neutered with special needs.",
         type: "Large",
         breed: "German Shepard",
         size: "Large" ,
@@ -52,7 +52,7 @@ const petsData = [
     },
     {
         name: "Sarge" ,
-        description: "Sarge is a senior bulldog who loves to cuddle and play fetch.",
+        description: "Sarge is a senior bulldog who loves to cuddle and play fetch.They are good with children, dogs,and cats. He is neutered with no special needs.",
         type: "Dog",
         breed: "Bulldog" ,
         size: "Medium" ,
@@ -69,7 +69,7 @@ const petsData = [
     },
     {
         name: "Arya",
-        description: "Arya loves to go for walks and play with her stuffed toys. The squeakier the better!",
+        description: "Arya loves to go for walks and play with her stuffed toys. The squeakier the better!They are good with children, dogs,and cats. She is neutered with special needs.",
         type: "Dog" ,
         breed: "Bulldog",
         size: "Medium",
@@ -86,7 +86,7 @@ const petsData = [
     },
     {
         name: "Paola",
-        description: "She is an adult bulldog who loves nothing more than to sit on the couch and get bellyrubs!",
+        description: "She is an adult bulldog who loves nothing more than to sit on the couch and get bellyrubs!They are good with children, dogs,and cats. She is neutered with no special needs.",
         type: "Dog" ,
         breed: "Bulldog" ,
         size: "Medium",
@@ -103,7 +103,7 @@ const petsData = [
     },
     {
         name: "Noodles" ,
-        description: "A young puppy who is a little shy at first but warms up quickly.",
+        description: "A young puppy who is a little shy at first but warms up quickly.They are good with children, dogs,and cats. He is neutered with no special needs.",
         type: "Dog",
         breed:"Toy Poodle" ,
         size: "Small",
@@ -120,7 +120,7 @@ const petsData = [
     },
     {
         name: "Arthur",
-        description: "Arthur is an older gentleman who loves his treats and to lay in the sun.",
+        description: "Arthur is an older gentleman who loves his treats and to lay in the sun.They are good with children, dogs,and cats. He is neutered with special needs.",
         type: "Dog" ,
         breed: "Toy Poodle" ,
         size: "Small" ,
@@ -137,7 +137,7 @@ const petsData = [
     },
     {
         name: "TaterTot",
-        description: "Tater is an adult pup with a heart of gold.",
+        description: "Tater is an adult pup with a heart of gold.They are good with children, dogs,and cats. She is neutered with no special needs.",
         type: "Dog",
         breed: "Toy Poodle" ,
         size:"Small" ,
@@ -154,7 +154,7 @@ const petsData = [
     },
     {
         name: "Nessa",
-        description: "She loves nothing more than a romp around the park and then a nap on the couch!",
+        description: "She loves nothing more than a romp around the park and then a nap on the couch!They are good with children, dogs,and cats. She is neutered with no special needs.",
         type: "Dog" ,
         breed: "Labrador Retriever" ,
         size: "Small",
@@ -171,7 +171,7 @@ const petsData = [
     },
     {
         name: "Midnight",
-        description: "Midnight loves to swim and play in the water.",
+        description: "Midnight loves to swim and play in the water.They are good with children, dogs,and cats. He is neutered with no special needs.",
         type: "Dog",
         breed: "Labrador Retriever" ,
         size: "Large",
@@ -188,7 +188,7 @@ const petsData = [
     },
     {
         name: "Cracker" ,
-        description: "A big boy who loves to run and play.",
+        description: "A big boy who loves to run and play.They are good with children, dogs,and cats. He is neutered with no special needs.",
         type: "Dog",
         breed: "Labrador Retriever",
         size: "Large",
@@ -205,7 +205,7 @@ const petsData = [
     },
     {
         name: "Munchkin" ,
-        description: "A small pup with huge dreams.",
+        description: "A small pup with huge dreams.They are good with children, dogs,and cats. She is neutered with no special needs.",
         type: "Dog" ,
         breed: "Labrador Retriever" ,
         size: "Large",
@@ -222,7 +222,7 @@ const petsData = [
     },
     {
         name: "Shorty",
-        description: "A little girl with big energy",
+        description: "A little girl with big energy.They are good with children, dogs,and cats. She is neutered with no special needs.",
         type: "Dog" ,
         breed: "Chihuahua" ,
         size: "Small",
@@ -239,7 +239,7 @@ const petsData = [
     },
     {
         name: "Oscar",
-        description:"Named for Oscar the Grouch, he is a grumpy little man who loves his family but takes time to warm up to strangers.",
+        description:"Named for Oscar the Grouch, he is a grumpy little man who loves his family but takes time to warm up to strangers.They are good with children, dogs,and cats. He is neutered with special needs.",
         type: "Dog",
         breed: "Chihuahua",
         size:"Small" ,
@@ -256,7 +256,7 @@ const petsData = [
     },
     {
         name: "Katya",
-        description: "She is a young girl who loves to ",
+        description: "She is a young girl who loves to play.They are good with children, dogs,and cats. She is neutered with no special needs. ",
         type: "Dog",
         breed: "Chihuahua",
         size: "Small" ,
@@ -273,7 +273,7 @@ const petsData = [
     },
     {
         name: "Edgar",
-        description: "Edgar is a goofy boy who loves to play. He knows basic commands to sit and laydown!",
+        description: "Edgar is a goofy boy who loves to play. He knows basic commands to sit and laydown!They are good with children, dogs,and cats. He is neutered with no special needs.",
         type: "Dog",
         breed: "Chihuahua",
         size: "Small",
@@ -290,7 +290,7 @@ const petsData = [
     },
     {
         name: "Sansa",
-        description:"A beautiful girl who loves the sun.",
+        description:"A beautiful girl who loves the sun.They are good with children, dogs,and cats. She is neutered with no special needs.",
         type: "Dog",
         breed: "Golden Retriever",
         size: "Large",
@@ -307,7 +307,7 @@ const petsData = [
     },
     {
         name: "Tarzan",
-        description: "Tarzan is a large man who loves to go on hikes and long walks.",
+        description: "Tarzan is a large man who loves to go on hikes and long walks.They are good with children, dogs,and cats. He is neutered with no special needs.",
         type: "Dog",
         breed: "Golden Retriever",
         size: "Large",
@@ -324,7 +324,7 @@ const petsData = [
     },
     {
         name: "Cheddar",
-        description: "A goofy girl who loves belly rubs. She has trouble hearing but that doesn't slow her down.",
+        description: "A goofy girl who loves belly rubs. She has trouble hearing but that doesn't slow her down.They are good with children, dogs,and cats. She is neutered with special needs.",
         type: "Dog",
         breed: "Golden Retriever" ,
         size:"Large" ,
@@ -341,7 +341,7 @@ const petsData = [
     },
     {
         name: "Hermione",
-        description: "A smart pup who loves to learn.",
+        description: "A smart pup who loves to learn.They are good with children, dogs,and cats. She is neutered with special needs.",
         type: "Dog" ,
         breed: "French Bulldog" ,
         size: "Small",
@@ -358,7 +358,7 @@ const petsData = [
     },
     {
         name: "Calico" ,
-        description: "A fun loving girl!",
+        description: "A fun loving girl!They are good with children, dogs,and cats. She is neutered with no special needs.",
         type: "Dog" ,
         breed: "French Bulldog" ,
         size: "Small",
@@ -375,7 +375,7 @@ const petsData = [
     },
     {
         name: "Arnold" ,
-        description: "An older man who likes to take it easy",
+        description: "An older man who likes to take it easy.They are good with children, dogs,and cats. He is neutered with no special needs.",
         type: "Dog",
         breed: "French Bulldog" ,
         size: "Small",
@@ -392,7 +392,7 @@ const petsData = [
     },
     {
         name: "Jon Snow" ,
-        description: "He loves the snow!",
+        description: "He loves the snow!They are good with children, dogs,and cats. He is neutered with no special needs.",
         type: "Dog",
         breed: "Husky",
         size: "Medium",
@@ -409,7 +409,7 @@ const petsData = [
     },
     {
         name: "Schnee",
-        description:"Schnee means snow in german because this girl loves to romp in the cold!",
+        description:"Schnee means snow in german because this girl loves to romp in the cold!They are good with children, dogs,and cats. She is neutered with no special needs.",
         type: "Dog",
         breed: "Husky" ,
         size: "Medium",
@@ -426,7 +426,7 @@ const petsData = [
     },
     {
         name: "Yeti",
-        description:"Watch out for the zoomies!",
+        description:"Watch out for the zoomies!They are good with children, dogs,and cats. He is neutered with no special needs.",
         type: "Dog",
         breed: "Husky",
         size: "Medium",
@@ -443,7 +443,7 @@ const petsData = [
     },
     {
         name: "Diamond",
-        description:"Look at the picture and you can see this is a silly girl!",
+        description:"Look at the picture and you can see this is a silly girl!They are good with children, dogs,and cats. She is neutered with no special needs.",
         type: "Dog",
         breed: "Pug",
         size: "Small" ,
@@ -460,7 +460,7 @@ const petsData = [
     },
     {
         name: "Weasley" ,
-        description: "A chill older dog.",
+        description: "A chill older dog.They are good with children, dogs,and cats. He is neutered with no special needs.",
         type: "Dog",
         breed:"Pug" ,
         size: "Small",
@@ -477,7 +477,7 @@ const petsData = [
     },
     {
         name: "River",
-        description:"Look at this sweetie!",
+        description:"Look at this sweetie!They are good with children, dogs,and cats. She is neutered with no special needs.",
         type: "Dog" ,
         breed:"Pug" ,
         size: "Small",
@@ -494,7 +494,7 @@ const petsData = [
     },
     {
         name: "Speckle",
-        description: "A short girl with big personality",
+        description: "A short girl with big personality.They are good with children, dogs,and cats. She is neutered with no special needs.",
         type: "Dog" ,
         breed: "Daschund",
         size: "Small" ,
@@ -511,7 +511,7 @@ const petsData = [
     },
     {
         name: "Juniper",
-        description: "A spunky young pup!",
+        description: "A spunky young pup!They are good with children, dogs,and cats. She is neutered with no special needs.",
         type: "Dog",
         breed: "Daschund",
         size: "Small" ,
@@ -528,7 +528,7 @@ const petsData = [
     },
     {
         name: "Pippin",
-        description:"A fool of a pup.",
+        description:"A fool of a pup.They are good with children, dogs,and cats. He is neutered with no special needs.",
         type: "Dog",
         breed:"Daschund" ,
         size:"Small" ,
@@ -545,7 +545,7 @@ const petsData = [
     },
     {
         name: "Xena",
-        description:"A sweet young girl",
+        description:"A sweet young girl. They are good with children, dogs,and cats. She is neutered with no special needs.",
         type: "Dog",
         breed:"Cattle Dog" ,
         size: "Medium" ,
@@ -562,7 +562,7 @@ const petsData = [
     },
     {
         name: "Elsa",
-        description: "She loves to run and let it go!",
+        description: "She loves to run and let it go!They are good with children, dogs,and cats. She is neutered with special needs.",
         type: "Dog" ,
         breed: "Cattle Dog" ,
         size: "Medium" ,
@@ -579,7 +579,7 @@ const petsData = [
     },
     {
         name: "Red",
-        description: "A gorgeous red girl with a beautiful coat!",
+        description: "A gorgeous red girl with a beautiful coat!They are good with children, dogs,and cats. She is neutered with no special needs.",
         type: "Dog",
         breed: "Cattle Dog",
         size: "Medium",
@@ -596,7 +596,7 @@ const petsData = [
     },
     {
         name: "Snowflake",
-        description: "A small puff of fur with a big personality!",
+        description: "A small puff of fur with a big personality!They are good with children, dogs,and cats. He is neutered with no special needs.",
         type: "Dog",
         breed: "Samoyed" ,
         size: "Medium",
@@ -613,7 +613,7 @@ const petsData = [
     },
     {
         name: "Gremlin",
-        description: "A fiesty older dog",
+        description: "A fiesty older dog.They are good with children, dogs,and cats. He is neutered with no special needs.",
         type: "Dog",
         breed: "Samoyed",
         size: "Medium",
@@ -630,7 +630,7 @@ const petsData = [
     },
     {
         name: "Charlie",
-        description:"Eager to learn and treat motivated!",
+        description:"Eager to learn and treat motivated!They are good with children, dogs,and cats. He is neutered with no special needs.",
         type: "Dog",
         breed: "Yorkshire Terrier",
         size:"Small",
@@ -647,7 +647,7 @@ const petsData = [
     },
     {
         name: "Yoko Ono",
-        description: "A small girl with a lot of spunk!",
+        description: "A small girl with a lot of spunk!They are good with children, dogs,and cats. She is neutered with no special needs.",
         type: "Dog",
         breed: "Yorkshire Terrier" ,
         size: "Small",
@@ -664,7 +664,7 @@ const petsData = [
     },
     {
         name: "Coco Chanel",
-        description:"A glamorous pup who loves to have her fur brushed.",
+        description:"A glamorous pup who loves to have her fur brushed.They are good with children, dogs,and cats. She is neutered with no special needs.",
         type: "Dog",
         breed: "Yorkshire Terrier",
         size: "Small",
@@ -681,7 +681,7 @@ const petsData = [
     },
     {
         name: "Courage",
-        description: "A brave dog who loves his people.",
+        description: "A brave dog who loves his people.They are good with children, dogs,and cats. He is neutered with no special needs.",
         type: "Dog",
         breed: "Rottweiler",
         size: "Large",
@@ -698,7 +698,7 @@ const petsData = [
     },
     {
         name:"Hagrid" ,
-        description:"A small pup with big personality. He loves other animals!",
+        description:"A small pup with big personality. He loves other animals!They are good with children, dogs,and cats. He is neutered with no special needs.",
         type: "Dog",
         breed: "Rottweiler" ,
         size: "Large",
@@ -715,7 +715,7 @@ const petsData = [
     },
     {
         name: "Gollem",
-        description:"A big dog with an even bigger heart.",
+        description:"A big dog with an even bigger heart.They are good with children, dogs,and cats. He is neutered with no special needs.",
         type: "Dog",
         breed: "Great Dane",
         size: "Large" ,
@@ -732,7 +732,7 @@ const petsData = [
     },
     {
         name: "Patches",
-        description: "A gentle giant.",
+        description: "A gentle giant.They are good with children, dogs,and cats. He is neutered with no special needs.",
         type: "Dog" ,
         breed: "Great Dane",
         size: "Large" ,
@@ -749,7 +749,7 @@ const petsData = [
     },
     {
         name: "Shorty",
-        description: "A big bundle of love",
+        description: "A big bundle of love.They are good with children, dogs,and cats. He is neutered with no special needs.",
         type: "Dog",
         breed: "Great Dane" ,
         size: "Large",
@@ -766,7 +766,7 @@ const petsData = [
     },
     {
         name: "Teddy",
-        description: "A fiesty little ball of fluff.",
+        description: "A fiesty little ball of fluff.They are good with children, dogs,and cats. She is neutered with no special needs.",
         type: "Dog",
         breed: "Pomeranian",
         size: "Small",
@@ -783,7 +783,7 @@ const petsData = [
     },
     {
         name: "Manatee",
-        description: "A sweet young pup.",
+        description: "A sweet young pup.They are good with children, dogs,and cats. He is neutered withspecial needs.",
         type: "Dog",
         breed: "Pomeranian",
         size: "Small",
@@ -800,7 +800,7 @@ const petsData = [
     },
     {
         name: "Shadow",
-        description: "Dark as night but sweet as sunshine.",
+        description: "Dark as night but sweet as sunshine.They are good with children, dogs,and cats. She is neutered with no special needs.",
         type: "Dog" ,
         breed: "Pomeranian",
         size: "Small",
@@ -817,7 +817,7 @@ const petsData = [
     },
     {
         name: "Muppet",
-        description:"She loves to get dressed up!",
+        description:"She loves to get dressed up!They are good with children, dogs,and cats. She is neutered with no special needs.",
         type: "Dog",
         breed:"Pomeranian" ,
         size: "Small",
@@ -834,7 +834,7 @@ const petsData = [
     },
     {
         name: "Dulce",
-        description: "Look at this hat wear cool pup",
+        description: "Look at this hat wearing cool pup! They are good with children, dogs,and cats. She is neutered with no special needs.",
         type: "Dog" ,
         breed: "German Shepard" ,
         size: "Large",
@@ -851,7 +851,7 @@ const petsData = [
     },
     {
         name: "Lola" ,
-        description:"A shy girl but super sweet.",
+        description:"A shy girl but super sweet. They are good with children, dogs,and cats. She is neutered with no special needs.",
         type: "Cat" ,
         breed: "Domestic" ,
         size: "Small",
@@ -868,7 +868,7 @@ const petsData = [
     },
     {
         name: "Honey",
-        description: "Just looking for belly rubs",
+        description: "Just looking for belly rubs.They are good with children, dogs,and cats. She is neutered with no special needs.",
         type: "Dog" ,
         breed:"Labrador Retriever" ,
         size: "Large",
@@ -885,7 +885,7 @@ const petsData = [
     },
     {
         name: "Tank",
-        description: "A tank of a smol boy",
+        description: "A tank of a smol boy.They are good with children, dogs,and cats. He is neutered with no special needs.",
         type: "Dog",
         breed: "Yorkshire Terrier",
         size: "Small",
@@ -902,7 +902,7 @@ const petsData = [
     },
     {
         name: "Buddy",
-        description: "A lazy buddy",
+        description: "A lazy buddy. They are good with children, dogs,and cats. He is neutered with no special needs.",
         type: "Dog",
         breed: "Labrador Retriever" ,
         size: "Large",
@@ -919,7 +919,7 @@ const petsData = [
     },
     {
         name: "Flea",
-        description:"The alpha of any home",
+        description:"The alpha of any home. They are good with children, dogs,and cats. He is neutered with no special needs.",
         type: "Dog" ,
         breed: "Chihuahua",
         size: "Small",
@@ -936,7 +936,7 @@ const petsData = [
     },
     {
         name: "Dan Dan",
-        description:"A smart pup who loves agility tricks",
+        description:"A smart pup who loves agility tricks. They are good with children, dogs,and cats. He is neutered with no special needs.",
         type: "Dog",
         breed: "Border Collie",
         size: "Medium",
@@ -953,7 +953,7 @@ const petsData = [
     },
     {
         name: "Coco",
-        description:"A bundle of fun",
+        description:"A bundle of fun.They are good with children, dogs,and cats. She is neutered with no special needs.",
         type: "Dog",
         breed: "Goldendoodle" ,
         size: "Medium",
@@ -970,7 +970,7 @@ const petsData = [
     },
     {
         name: "Nessa" ,
-        description: "Give me all the walks and snacks",
+        description: "Give me all the walks and snacks.They are good with children, dogs,and cats. She is neutered with no special needs.",
         type: "Dog",
         breed: "Labrador Retriever" ,
         size: "Large",
@@ -987,7 +987,7 @@ const petsData = [
     },
     {
         name: "Izzy" ,
-        description:"Loves to be the only pet",
+        description:"Loves to be the only pet.They are good with children, dogs,and cats. She is neutered with no special needs.",
         type: "Cat" ,
         breed: "Domestic",
         size: "Small",

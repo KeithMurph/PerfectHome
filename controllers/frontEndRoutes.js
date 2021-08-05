@@ -2,16 +2,17 @@ const express = require('express');
 const router = express.Router();
 const db = require('../models');
 const withAuth = require('../utils/auth');
+const Breed = require('../models/Breed')
 
 // router.get("/", (req,res) => {
-//     db.Post.findAll({
+//     db.User.findAll({
 //         //finding user info with the posts
 //         include: [db.User]
 //     }).then(data => {
 //         const allPost = data.map(post=> post.get({
 //             plain:true
 //         }))
-//         res.render("allPost", {layout:"dashboard", allPost})
+//         res.render("homepage", {layout:"dashboard", allPost})
 //     })
 // })
 
@@ -35,14 +36,15 @@ router.get('/', async (req, res) => {
     }
   });
 
-  //login
+//   //login
 router.get("/login", (req,res) =>{
-    if(req.session.loggedIn){
-      res.redirect("/")  
+    if(req.session.loggedInUser){
+      res.redirect("/profile")  
       return 
     }
-    res.render("login")
+    res.render("loginSignup")
 })
+
 
 //log out
 router.get("/logout", (req,res)=>{
@@ -53,7 +55,7 @@ router.get("/logout", (req,res)=>{
 //sign up
 router.get("/signUp", (req,res) =>{
     if(req.session.loggedIn){
-        res.redirect("/")  
+        res.redirect("/profile")  
         return 
       }
     res.render("createUser")
@@ -63,6 +65,9 @@ router.get('/survey', (req,res)=>{
     res.render('survey');
 })
 
+router.get("/breedSearch", (req,res)=> {
+  res.render("breedInfo")
+})
 
 router.get("/profile", withAuth, (req,res) =>{
     if(req.session.user){
@@ -77,12 +82,52 @@ router.get("/profile", withAuth, (req,res) =>{
      })
     }}
 )
+  
+// Session route to check if logged in
+router.get("/session",(req,res)=>{
+  res.json({
+      sessionData:req.session
+      
+  })
+})
+
+router.get("/breeds/:breed",(req,res)=> {
+  db.Breed.findByPk(req.params.breed).then(breed=>{
     
+      const breedJson = breed.get({plain:true})
+      
+      res.render("breedCard",breedJson);
+  }).catch(err=>{
+      console.log(err);
+      res.status(500).json({message:"No breed found!"})
+  })
+})
+    
+// 
     
 //  } else{
 //      res.redirect("/login")
 //  }
  
+
+router.get("/profile/:id",(req,res)=>{
+  db.User.findByPk(req.params.id,{
+      include:[{
+          model:db.Preferences,
+          model:db.Favorite
+      }]
+  }).then( async user=>{
+      const formatted = user.get({plain:true})
+     const hbsUser = {
+         ...formatted,
+         loggedInUser:req.session.user,
+         isMyPage:req.params.id == req.session.user?.id,
+     }
+
+     console.log(hbsUser);
+      res.render("profile",hbsUser)
+  })
+})
 
 
  //get favorite pets

@@ -38,7 +38,11 @@ const seedDatabase = async () => {
       password: "password",
       zipcode: "98077"
     }
-  ]);
+  ],
+  {
+    individualHooks: true,
+  }
+  );
 
   process.exit(0);
 };

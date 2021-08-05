@@ -4,8 +4,9 @@ require("dotenv").config();
 // Sets up the Express App
 // =============================================================
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3002;
 const allRoutes = require('./controllers');
+const db = require('./models')
 
 
 // Sets up the Express app to handle data parsing
@@ -20,6 +21,9 @@ const exphbs = require('express-handlebars');
 
 
 const hbs = exphbs.create({});
+app.engine('handlebars', hbs.engine);
+app.set('view engine', 'handlebars');
+
 
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');

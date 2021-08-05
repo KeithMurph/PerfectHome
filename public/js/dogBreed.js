@@ -6,19 +6,8 @@ const dogBreedBtn = document.querySelector("#dog-breed-btn")
 dogBreedBtn.addEventListener("click",event => {
     event.preventDefault();
     const dogBreed = dogBreedInput.value;
-    fetch(`/breeds/${dogBreed}`,{
-        method: "GET",
-        headers: {
-            'Content-Type': 'application/json',
-          },
-    }).then(response => response.json())
-    .then(data =>{
-        console.log(data)
-        
-    }).catch(err =>{
-        console.log(err)
-    })
- 
+    
+   location.assign(`/breeds/${dogBreed}`)
 })
 
 

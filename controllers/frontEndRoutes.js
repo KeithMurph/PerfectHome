@@ -83,22 +83,17 @@ router.get("/profile", withAuth, (req,res) =>{
 
 router.get("/breeds/:breed",(req,res)=> {
   db.Breed.findByPk(req.params.breed).then(breed=>{
-    
-      const breedJson = breed.get({plain:true})
-      
-      res.render("breedCard",breedJson);
+    const breedJson = breed.get({plain:true})
+    res.render("breedCard", breedJson)
+      // // console.log("breed:",breedJson.breed)
+      // res.render("breedCard", breedJson);
+      // res.json(breed.dataValue.breed)
+      // console.log(breed)
   }).catch(err=>{
       console.log(err);
       res.status(500).json({message:"No breed found!"})
   })
 })
     
-    
-//  } else{
-//      res.redirect("/login")
-//  }
- 
-
-
  //get favorite pets
 module.exports = router

@@ -1,6 +1,6 @@
 const galleryContainer = document.querySelector('.gallery-container');
-const galleryControlsContainer = document.querySelector('.gallery-controls');
-const galleryControls = ['previous', 'next'];
+const galleryControlsContainer = document.querySelector('.gallery-controls')
+const galleryControls = ['previous','next'];
 const galleryItems = document.querySelectorAll('.gallery-item');
 
 class Carousel {
@@ -12,6 +12,7 @@ class Carousel {
 
   // Update css classes for gallery
   updateGallery() {
+  
     this.carouselArray.forEach(el => {
       el.classList.remove('gallery-item-1');
       el.classList.remove('gallery-item-2');

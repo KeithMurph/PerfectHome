@@ -88,6 +88,8 @@ router.get('/:id', async (req,res) => {
 //get profile
 
 //get favorite pets
-
+router.get("/favoritePets", (req,res)=>{
+    
+})
 
 module.exports= router

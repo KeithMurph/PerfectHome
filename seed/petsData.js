@@ -1,4 +1,4 @@
-const { Adoptable } = require("../models")
+
 
 const petsdata = [
     {
@@ -1006,6 +1006,6 @@ const petsdata = [
     }
 ]
 
-const seedPets = () => Adoptable.bulkCreate(petsdata);
 
-module.exports = seedPets
+
+module.exports = petsdata

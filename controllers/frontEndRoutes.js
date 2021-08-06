@@ -20,8 +20,6 @@ const { compareSync } = require('bcrypt');
 
 router.get('/', async (req, res) => {
     try {
-
-      // const randomPets = Adoptable(Math.floor(Math.random() * petsData.length))
     
       const adoptableData = await Adoptable.findAll();
       const adoptableJson = adoptableData.map((adoptable => adoptable.get({ plain: true })));
@@ -29,9 +27,13 @@ router.get('/', async (req, res) => {
       // console.log(randomPets)
       // console.log(adoptableData)
 
-
       res.render('homepage', { 
         adoptableJson, 
+        randomPet1 : adoptableJson[Math.floor(Math.random() * adoptableJson.length)],
+        randomPet2: adoptableJson[Math.floor(Math.random() * adoptableJson.length)],
+        randomPet3: adoptableJson[Math.floor(Math.random() * adoptableJson.length)],
+        randomPet4: adoptableJson[Math.floor(Math.random() * adoptableJson.length)],
+        randomPet5: adoptableJson[Math.floor(Math.random() * adoptableJson.length)],
         logged_inr: req.session.user 
       });
     } catch (err) {
@@ -72,10 +74,11 @@ router.get('/survey', (req,res)=>{
 
 router.get("/breeds", (req,res)=> {
   if(req.session.user){
-  res.render("breedInfo")
-}
+  res.render("breedInfo",
+  {logged_inr:req.session.user})
+} else {
 res.render('breedInfo')
-
+}
 })
 
 router.get("/profile", withAuth, (req,res) =>{

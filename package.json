@@ -1,0 +1,33 @@
+{
+  "name": "perfecthome",
+  "version": "1.0.0",
+  "description": "-AS A USER I WANT TO FIND A PET(DOG/CAT) THATS PERFECT FOR ME AND MY FAMILY",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "seed": "node seeds/seed.js",
+    "watch": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KeithMurph/PerfectHome.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KeithMurph/PerfectHome/issues"
+  },
+  "homepage": "https://github.com/KeithMurph/PerfectHome#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "express-session": "^1.17.2",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.5"
+  }
+}

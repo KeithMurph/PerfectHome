@@ -1,0 +1,27 @@
+<form class="breed-info-form" method="GET" >
+    <div class="form-group">
+        <label id="breed-name">
+            Search by Breed Name:         
+        </label>
+        <input class="form-input" type="text" name="breed" id="breed-info" />
+         <button class="btn btn-primary" id="dog-breed-btn">Enter</button>
+    </div>
+
+</form>
+
+<div id="breed-card">
+    <div>
+        <img src="{{image_url}}" alt="dog picture" height="300px">
+    </div>
+    <h2>Breed</h2>
+    <p>{{breed}}</p>
+    <h3>Size</h3> 
+    <p>{{size}}</p>
+    <h3>Home Requirement </h3> 
+    <p>{{home_requirement}}</p>
+    <h3>Temperament</h3> 
+    <p>{{temperament}}</p>
+   
+</div>
+
+<script src="/js/dogBreed.js"></script>

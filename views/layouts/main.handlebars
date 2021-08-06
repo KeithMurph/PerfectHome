@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/css/carousel.css"/>
-    {{!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/> --}}
     <link rel="stylesheet" type="text/css" href="/css/style.css"/>
     <title>Perfect Home</title>
 </head>
@@ -15,7 +14,6 @@
         <h1>Perfect Home</h1>
         <h2>Find a dog near you now!</h2>
     <nav>
-
         {{#if logged_inr}}
         <a href="/">home</a>
         <a href="/profile/{{logged_inr.id}}">profile</a>
@@ -24,7 +22,6 @@
         {{else}}
         <a href="/">home</a>
         <a href="/login">login/signup</a>
-
         <a href="/breeds">Find Breed Info</a>
         {{/if}}
 
@@ -36,9 +33,10 @@
 
 
   </main>
-  {{!-- <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script> --}}
 </body>
 
-
+{{!-- <script src="js/login.js"></script>
+<script src="js/logout.js"></script>
+<script src="js/signUp.js"></script> --}}
 <script src="/js/carousel.js"></script>
 </html>

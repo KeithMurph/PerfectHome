@@ -131,5 +131,13 @@ router.get("/breeds/:breed",(req,res)=> {
   })
 })
     
- //get favorite pets
+//adopt pets
+router.get('/adopt', (req,res)=>{
+  res.render('adoptableDogs');
+})
+
+router.get('/adopt/:id', (req,res)=>{
+  res.render('adoptablePetCard');
+})
+
 module.exports = router

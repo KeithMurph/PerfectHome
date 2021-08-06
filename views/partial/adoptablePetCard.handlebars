@@ -1,12 +1,10 @@
-<div>
-    <h3>Name: {{name}}</h3>
-    <h3>Description:{{description}}</h3>
-    <h3>Breed:{{breed}}</h3> 
-    <h3>Size:{{size}}</h3>
-    <h3>Age:{{age}}</h3>
-    <h3>House Size:{{house_size}}</h3>
-    <img src="{{image_url}}" alt="">
-    
+<div class="card" style="width: 18rem;">
+  <img src="{{image_url}}" class="card-img-top" alt="adoptable pet image">
+  <div class="card-body">
+    <h5 class="card-title">Name: {{name}}</h5>
+   <a href="/adopt/:id" class="btn btn-primary">See More</a>
+  </div>
 </div>
+
 
 c<script src="/js/showAdoptable.js"></script>

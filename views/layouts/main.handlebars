@@ -14,6 +14,7 @@
         <h1>Perfect Home</h1>
         <h2>Find a dog near you now!</h2>
     <nav>
+<<<<<<< HEAD
         {{#if loggedInUser}}
         <a href="/">Home</a>
         <a href="/profile">Profile</a>
@@ -23,6 +24,16 @@
         <a href="/">Home</a>
         <a href="/login">Login/Signup</a>
         <a href="/profile">Profile</a>
+=======
+        {{#if logged_inr}}
+        <a href="/">home</a>
+        <a href="/profile/{{logged_inr.id}}">profile</a>
+        <a href="/breeds/">Find Breed Info</a>
+        <a href="/logout">logout</a>
+        {{else}}
+        <a href="/">home</a>
+        <a href="/login">login/signup</a>
+>>>>>>> Develop
         <a href="/breeds">Find Breed Info</a>
         {{/if}}
 

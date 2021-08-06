@@ -4,41 +4,48 @@ const db = require('../models');
 const withAuth = require('../utils/auth');
 const Breed = require('../models/Breed')
 
-// router.get("/", (req,res) => {
-//     db.User.findAll({
-//         //finding user info with the posts
-//         include: [db.User]
-//     }).then(data => {
-//         const allPost = data.map(post=> post.get({
+// router.get("/", aysnc (req,res) => {
+//    try {
+//      const data = await db.Adoptable.findAll().then(data => {
+//         const allAdoptable = data.map(adoptable=> adoptable.get({
 //             plain:true
 //         }))
-//         res.render("homepage", {layout:"dashboard", allPost})
+//         res.render("homepage", {layout:"dashboard", allAdoptable})
 //     })
 // })
 
-// const { Adoptable } = require('../models');
-// const petsData = require('../seeds/petsData.json')
+const { Adoptable } = require('../models');
+const petsData = require('../seed/petsData');
+const { compareSync } = require('bcrypt');
 
 router.get('/', async (req, res) => {
     try {
+    
+      const adoptableData = await Adoptable.findAll();
+      const adoptableJson = adoptableData.map((adoptable => adoptable.get({ plain: true })));
+  
+      // console.log(randomPets)
+      // console.log(adoptableData)
 
-    //   const randomPets = Adoptable(Math.floor(Math.random() * petsData.length))
-    //   const adoptableData = await randomPets.findAll();
-  
-    //   const adoptableJson = adoptableData.map((adoptable => adoptable.get({ plain: true })));
-  
       res.render('homepage', { 
-        // adoptableJson, 
-        logged_in: req.session.logged_in 
+        adoptableJson, 
+        randomPet1 : adoptableJson[Math.floor(Math.random() * adoptableJson.length)],
+        randomPet2: adoptableJson[Math.floor(Math.random() * adoptableJson.length)],
+        randomPet3: adoptableJson[Math.floor(Math.random() * adoptableJson.length)],
+        randomPet4: adoptableJson[Math.floor(Math.random() * adoptableJson.length)],
+        randomPet5: adoptableJson[Math.floor(Math.random() * adoptableJson.length)],
+        logged_inr: req.session.user 
       });
     } catch (err) {
       res.status(500).json(err);
     }
+
   });
 
 //   //login
 router.get("/login", (req,res) =>{
-    if(req.session.loggedInUser){
+  console.log(req.session)
+    if(req.session.user){
       res.redirect("/profile")  
       return 
     }
@@ -54,7 +61,7 @@ router.get("/logout", (req,res)=>{
 
 //sign up
 router.get("/signUp", (req,res) =>{
-    if(req.session.loggedIn){
+    if(req.session.user){
         res.redirect("/profile")  
         return 
       }
@@ -66,9 +73,12 @@ router.get('/survey', (req,res)=>{
 })
 
 router.get("/breeds", (req,res)=> {
-
-  res.render("breedInfo")
-
+  if(req.session.user){
+  res.render("breedInfo",
+  {logged_inr:req.session.user})
+} else {
+res.render('breedInfo')
+}
 })
 
 router.get("/profile", withAuth, (req,res) =>{
@@ -107,8 +117,8 @@ router.get("/profile/:id",(req,res)=>{
       const formatted = user.get({plain:true})
      const hbsUser = {
          ...formatted,
-         loggedInUser:req.session.user,
-         isMyPage:req.params.id == req.session.user?.id,
+         logged_inr:req.session.user,
+         isMyPage:req.params.id == req.session.user.id,
      }
 
      console.log(hbsUser);

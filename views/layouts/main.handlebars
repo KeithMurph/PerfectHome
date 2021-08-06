@@ -14,15 +14,14 @@
         <h1>Perfect Home</h1>
         <h2>Find a dog near you now!</h2>
     <nav>
-        {{#if loggedInUser}}
+        {{#if logged_inr}}
         <a href="/">home</a>
-        <a href="/profile">profile</a>
-        <a href="/breeds">Find Breed Info</a>
+        <a href="/profile/{{logged_inr.id}}">profile</a>
+        <a href="/breeds/">Find Breed Info</a>
         <a href="/logout">logout</a>
         {{else}}
         <a href="/">home</a>
         <a href="/login">login/signup</a>
-        <a href="/profile">profile</a>
         <a href="/breeds">Find Breed Info</a>
         {{/if}}
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">Ω
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/css/carousel.css"/>
     <link rel="stylesheet" type="text/css" href="/css/style.css"/>
     <title>Perfect Home</title>
@@ -14,15 +14,14 @@
         <h1>Perfect Home</h1>
         <h2>Find a dog near you now!</h2>
     <nav>
-        {{#if loggedInUser}}
+        {{#if logged_inr}}
         <a href="/">home</a>
-        <a href="/profile">profile</a>
-        <a href="/breeds">Find Breed Info</a>
+        <a href="/profile/{{logged_inr.id}}">profile</a>
+        <a href="/breeds/">Find Breed Info</a>
         <a href="/logout">logout</a>
         {{else}}
         <a href="/">home</a>
         <a href="/login">login/signup</a>
-        <a href="/profile">profile</a>
         <a href="/breeds">Find Breed Info</a>
         {{/if}}
 
@@ -36,8 +35,8 @@
   </main>
 </body>
 
-{{!-- <script src="js/login.js"></script>
+<script src="js/login.js"></script>
 <script src="js/logout.js"></script>
-<script src="js/signUp.js"></script> --}}
+<script src="js/signUp.js"></script>
 <script src="/js/carousel.js"></script>
 </html>

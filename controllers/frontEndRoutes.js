@@ -142,12 +142,28 @@ router.get("/breeds/:breed",(req,res)=> {
 })
     
 //adopt pets
-router.get('/adopt', (req,res)=>{
-  res.render('adoptableDogs');
+router.get("/adopt", async (req,res)=> {
+  try{
+    const dbPetsData = await Adoptable.findAll();
+    const dogsData = dbPetsData.map((dogs)=> 
+    dogs.get({plain:true}));
+    res.render("adoptableDogs", {petsdata:dogsData});
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
 })
 
 router.get('/adopt/:id', (req,res)=>{
-  res.render('fullPetCard');
+  db.Adoptable.findByPk(req.params.id).then(adoptable => {
+    const adoptableJson = adoptable.get({plain:true})
+    res.render('fullPetCard', adoptableJson);
+  }).catch(err=>{
+    console.log(err);
+    res.status(500).json({message:"No dog found!"})
+  })
 })
+
+
 
 module.exports = router

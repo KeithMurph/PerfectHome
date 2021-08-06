@@ -1,4 +1,6 @@
-const petsData = [
+const { Adoptable } = require("../models")
+
+const petsdata = [
     {
         name: "Calvin" ,
         description:"Calvin is a fun loving guy who loves to play ball! They are good with children, dogs,and cats. He is neutered with no special needs.",
@@ -1004,4 +1006,6 @@ const petsData = [
     }
 ]
 
-module.exports = petsData
+const seedPets = () => Adoptable.bulkCreate(petsdata);
+
+module.exports = seedPets

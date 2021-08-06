@@ -14,17 +14,7 @@
         <h1>Perfect Home</h1>
         <h2>Find a dog near you now!</h2>
     <nav>
-<<<<<<< HEAD
-        {{#if loggedInUser}}
-        <a href="/">Home</a>
-        <a href="/profile">Profile</a>
-        <a href="/breeds">Find Breed Info</a>
-        <a href="/logout">Logout</a>
-        {{else}}
-        <a href="/">Home</a>
-        <a href="/login">Login/Signup</a>
-        <a href="/profile">Profile</a>
-=======
+
         {{#if logged_inr}}
         <a href="/">home</a>
         <a href="/profile/{{logged_inr.id}}">profile</a>
@@ -33,7 +23,7 @@
         {{else}}
         <a href="/">home</a>
         <a href="/login">login/signup</a>
->>>>>>> Develop
+
         <a href="/breeds">Find Breed Info</a>
         {{/if}}
 
@@ -47,8 +37,6 @@
   </main>
 </body>
 
-{{!-- <script src="js/login.js"></script>
-<script src="js/logout.js"></script>
-<script src="js/signUp.js"></script> --}}
+
 <script src="/js/carousel.js"></script>
 </html>

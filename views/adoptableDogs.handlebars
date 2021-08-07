@@ -1,9 +1,16 @@
-<div>
-    <h3>Name:</h3>
-    <h3>Description:</h3>
-    <h3>Breed:</h3>
-    <h3>Size:</h3>
-    <h3>Age:</h3>
-    <h3>House Size:</h3>
-    
-</div>
+
+    {{#each petsdata}}
+    <div class="card" style="width: 18rem;">
+        <img src="{{image_url}}" class="card-img-top" alt="adoptable pet image">
+        <div class="card-body">
+            <h5 class="card-title">Name: {{name}}</h5>
+            <a href="/adopt/{{id}}" class="btn btn-primary">See More</a>
+        </div>
+    </div>
+    {{/each}}
+
+
+
+
+
+

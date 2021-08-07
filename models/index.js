@@ -1,4 +1,4 @@
-const Favorite = require('./Favorite');
+const Favorite = require('./favorite');
 const Preferences = require('./Preferences');
 const User = require('./User')
 const Adoptable = require("./Adoptable")

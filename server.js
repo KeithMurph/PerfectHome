@@ -18,19 +18,10 @@ app.use(express.static('public'));
 
 const exphbs = require('express-handlebars');
 
-const cloudinary = require('cloudinary').v2
-cloudinary.config({
-    cloud_name: 'diq5tbufz'
-})
-
-
 const hbs = exphbs.create({});
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
-
-app.engine('handlebars', hbs.engine);
-app.set('view engine', 'handlebars');
 
 const session = require("express-session")
 const SequelizeStore = require('connect-session-sequelize')(session.Store);

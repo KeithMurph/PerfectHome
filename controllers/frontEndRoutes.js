@@ -4,16 +4,6 @@ const db = require('../models');
 const withAuth = require('../utils/auth');
 const Breed = require('../models/Breed')
 
-// router.get("/", aysnc (req,res) => {
-//    try {
-//      const data = await db.Adoptable.findAll().then(data => {
-//         const allAdoptable = data.map(adoptable=> adoptable.get({
-//             plain:true
-//         }))
-//         res.render("homepage", {layout:"dashboard", allAdoptable})
-//     })
-// })
-
 const { Adoptable } = require('../models');
 const petsData = require('../seed/petsData');
 const { compareSync } = require('bcrypt');
@@ -23,9 +13,6 @@ router.get('/', async (req, res) => {
     
       const adoptableData = await Adoptable.findAll();
       const adoptableJson = adoptableData.map((adoptable => adoptable.get({ plain: true })));
-  
-      // console.log(randomPets)
-      // console.log(adoptableData)
 
       res.render('homepage', { 
         adoptableJson, 
@@ -35,6 +22,7 @@ router.get('/', async (req, res) => {
         randomPet4: adoptableJson[Math.floor(Math.random() * adoptableJson.length)],
         randomPet5: adoptableJson[Math.floor(Math.random() * adoptableJson.length)],
         logged_inr: req.session.user 
+
       });
     } catch (err) {
       res.status(500).json(err);
@@ -42,7 +30,7 @@ router.get('/', async (req, res) => {
 
   });
 
-//   //login
+//login
 router.get("/login", (req,res) =>{
   console.log(req.session)
     if(req.session.user){
@@ -68,10 +56,12 @@ router.get("/signUp", (req,res) =>{
     res.render("createUser")
 })
 
+// survey
 router.get('/survey', (req,res)=>{
-    res.render('survey');
+    res.render('survey', {logged_inr: req.session.user });
 })
 
+// get all breeds
 router.get("/breeds", (req,res)=> {
   if(req.session.user){
   res.render("breedInfo",
@@ -81,6 +71,7 @@ res.render('breedInfo')
 }
 })
 
+// login
 router.get("/profile", withAuth, (req,res) =>{
     if(req.session.user){
      db.User.findByPk(req.session.user.id,{
@@ -104,9 +95,7 @@ router.get("/session",(req,res)=>{
   })
 })
 
-
- 
-
+// profile by id
 router.get("/profile/:id",(req,res)=>{
   db.User.findByPk(req.params.id,{
       include:[{
@@ -147,7 +136,7 @@ router.get("/adopt", async (req,res)=> {
     const dbPetsData = await Adoptable.findAll();
     const dogsData = dbPetsData.map((dogs)=> 
     dogs.get({plain:true}));
-    res.render("adoptableDogs", {petsdata:dogsData});
+    res.render("adoptableDogs", {petsdata:dogsData, logged_inr: req.session.user});
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
@@ -156,7 +145,9 @@ router.get("/adopt", async (req,res)=> {
 
 router.get('/adopt/:id', (req,res)=>{
   db.Adoptable.findByPk(req.params.id).then(adoptable => {
-    const adoptableJson = adoptable.get({plain:true})
+
+    const adoptableJson = adoptable.get({plain:true});
+
     res.render('fullPetCard', adoptableJson);
   }).catch(err=>{
     console.log(err);

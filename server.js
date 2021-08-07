@@ -8,7 +8,6 @@ const PORT = process.env.PORT || 3002;
 const allRoutes = require('./controllers');
 const db = require('./models')
 
-
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -18,6 +17,11 @@ app.use(express.static('public'));
 
 
 const exphbs = require('express-handlebars');
+
+const cloudinary = require('cloudinary').v2
+cloudinary.config({
+    cloud_name: 'diq5tbufz'
+})
 
 
 const hbs = exphbs.create({});

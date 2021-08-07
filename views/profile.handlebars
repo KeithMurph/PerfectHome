@@ -29,6 +29,14 @@
                 <textarea id="newPostBody" id=""  placeholder="insert image here.."></textarea>
                  <button>Post new pet</button>
     </form>
+ <div class="card">
+     <img src="http://placekitten.com/200/300" id="preview" />
+      <label class="file-upload-container" for="upload">
+        <input id="upload" type="file" style="display:none;">
+        Select an Image
+      </label>
+    </div>
+
 {{/if}}
 
 
@@ -59,8 +67,9 @@
         </p>
       {{/each}} 
 
-      <script src= "/public/js/profile.js"></script> 
-      <script src= "/public/js/favoritePet.js"></script> 
+      <script src= "/js/profile.js"></script> 
+      <script src= "/js/favoritePet.js"></script> 
+      <script src = "/js/cloudinary.js"></script>
 <div class="container">
 
 

@@ -17,7 +17,7 @@ document.getElementById("petTypeBtn").addEventListener("click", function() {
 document.getElementById("homeTypeBtn").addEventListener("click", function() {
     petParams.push(house_size.value)
 
-    if(house_size.value === "house_size:small"){
+    if(house_size.value === "house_size:Small"){
     document.getElementById("houseTypeConfirm").innerText="🌇Apartment"
     }else{
         document.getElementById("houseTypeConfirm").innerText="🏡House"

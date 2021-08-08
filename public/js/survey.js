@@ -3,7 +3,7 @@
 document.getElementById("petTypeBtn").addEventListener("click", function() {
     petParams.push(type.value)
 
-    if(type.value === "Dog"){
+    if(type.value === "type:Dog"){
     document.getElementById("typeConfirm").innerText="🐕Dog"
     }else{
         document.getElementById("typeConfirm").innerText="😺Cat"
@@ -17,7 +17,7 @@ document.getElementById("petTypeBtn").addEventListener("click", function() {
 document.getElementById("homeTypeBtn").addEventListener("click", function() {
     petParams.push(house_size.value)
 
-    if(house_size.value === "Apartment"){
+    if(house_size.value === "house_size:small"){
     document.getElementById("houseTypeConfirm").innerText="🌇Apartment"
     }else{
         document.getElementById("houseTypeConfirm").innerText="🏡House"
@@ -32,7 +32,7 @@ document.getElementById("homeTypeBtn").addEventListener("click", function() {
 document.getElementById("yardTypeBtn").addEventListener("click", function() {
    petParams.push(has_yard.value)
 
-   if(has_yard.value === "true"){
+   if(has_yard.value === "has_yard:true"){
        document.getElementById("yardTypeConfirm").innerText="🌳Yard"
    }else {
        document.getElementById("yardTypeConfirm").innerText="🔑No yard"
@@ -46,7 +46,7 @@ document.getElementById("yardTypeBtn").addEventListener("click", function() {
 document.getElementById("otherDogBtn").addEventListener("click", function() {
     petParams.push(good_with_dogs.value)
 
-    if(good_with_dogs.value === "true"){
+    if(good_with_dogs.value === "good_with_dogs:true"){
         document.getElementById("goodWithDogsConfirm").innerText="🐶🐶 I have dog(s)"
     }else{
         document.getElementById("goodWithDogsConfirm").innerText="🤷‍♀️ I need a dog!"
@@ -60,7 +60,7 @@ document.getElementById("otherDogBtn").addEventListener("click", function() {
 document.getElementById("otherCatBtn").addEventListener("click", function() {
     petParams.push(good_with_cats.value)
 
-    if(good_with_cats.value === "true"){
+    if(good_with_cats.value === "good_with_cats:true"){
         document.getElementById("goodWithCatsConfirm").innerText="🐱🐱‍🚀 I have cat(s)"
     }else{
         document.getElementById("goodWithCatsConfirm").innerText="🤷‍♀️ I need a cat!"
@@ -74,7 +74,7 @@ document.getElementById("otherCatBtn").addEventListener("click", function() {
 document.getElementById("childrenBtn").addEventListener("click", function() {
     petParams.push(good_with_children.value)
 
-    if(good_with_children.value === "true"){
+    if(good_with_children.value === "good_with_children:true"){
         document.getElementById("goodWithChildrenConfirm").innerText="👶🧒 I have children"
     }else{
         document.getElementById("goodWithChildrenConfirm").innerText="🎅 I don't have children"
@@ -88,11 +88,11 @@ document.getElementById("childrenBtn").addEventListener("click", function() {
 document.getElementById("petSizeBtn").addEventListener("click", function() {
    petParams.push(size.value)
 
-   if(size.value === "Large"){
+   if(size.value === "size:Large"){
        document.getElementById("sizeConfirm").innerText="🐳 I'll take your largest pet please"
-   } else if(size.value === "Medium"){
+   } else if(size.value === "size:Medium"){
     document.getElementById("sizeConfirm").innerText="🐕 Not too big not too small"
-} else if(size.value === "Small"){
+} else if(size.value === "size:Small"){
     document.getElementById("sizeConfirm").innerText="🐈 Nice small pet"
 } else{
     document.getElementById("sizeConfirm").innerText="🦕 I'll take anything"
@@ -107,13 +107,13 @@ document.getElementById("petSizeBtn").addEventListener("click", function() {
 document.getElementById("petAgeBtn").addEventListener("click", function() {
    petParams.push(age.value)
 
-   if(age.value === "Baby"){
+   if(age.value === "age:Baby"){
     document.getElementById("ageConfirm").innerText="🐱🐶 I want a puppy/kitten"
-} else if(age.value === "Young"){
+} else if(age.value === "age:Young"){
  document.getElementById("ageConfirm").innerText="🐱🐶 Young just not a puppy/kitten"
-} else if(age.value === "Adult"){
+} else if(age.value === "age:Adult"){
  document.getElementById("ageConfirm").innerText="🐶🐱 I want a full grown pet"
-} else if(age.value === "Senior"){
+} else if(age.value === "age:Senior"){
  document.getElementById("ageConfirm").innerText="👴 I'll give a senior pet a home"
 } else{
     document.getElementById("ageConfirm").innerText="🦕 I'll take anything"
@@ -129,7 +129,7 @@ document.getElementById("petAgeBtn").addEventListener("click", function() {
 document.getElementById("clawedBtn").addEventListener("click", function() {
    petParams.push(has_claws.value)
 
-   if(has_claws.value === "true"){
+   if(has_claws.value === "has_claws:true"){
     document.getElementById("clawConfirm").innerText="💩 Yes but I feel horible"
 }else{
     document.getElementById("clawConfirm").innerText="💅 Please don't declaw your pets!"
@@ -142,7 +142,7 @@ document.getElementById("clawedBtn").addEventListener("click", function() {
 document.getElementById("spayedBtn").addEventListener("click", function() {
    petParams.push(spayed.value)
 
-   if(spayed.value === "true"){
+   if(spayed.value === "spayed:true"){
     document.getElementById("spayedConfirm").innerText="🐾Yes!"
 }else{
     document.getElementById("spayedConfirm").innerText="🐾No but I will consider it"
@@ -156,7 +156,7 @@ document.getElementById("spayedBtn").addEventListener("click", function() {
 document.getElementById("specialBtn").addEventListener("click", function() {
     petParams.push(special_needs.value)
 
-    if(special_needs.value === "true"){
+    if(special_needs.value === "special_needs:true"){
         document.getElementById("specialConfirm").innerText="👼 Sure I'd love to help a pet in need"
     }else{
         document.getElementById("specialConfirm").innerText="🐱‍🚀 I've got enough on my plate"

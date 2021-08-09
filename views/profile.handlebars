@@ -1,81 +1,81 @@
-    <h1>{{username}}'s page</h1>
-    
-    <nav>
+<h1>{{username}}'s page</h1>
+
+<nav>
     <a href="/survey">Take Survey</a>
     <a href="/create">Post a New Pet For Adoption</a>
     <a href="/profile/favoritePets">Look at Favorite Pets</a>
 
-    </nav>
+</nav>
 
 
-    <h1>Set/reset your preferences by taking the quiz below</h1>
+<h1>Set/reset your preferences by taking the quiz below</h1>
 
 {{#if isMyPage}}
-    <h3>New Pet Data</h3>
-    <form id="newPostForm">
-        <textarea id="newPostBody" id=""  placeholder="Pets Name"></textarea>
-        <textarea id="newPostBody" id=""  placeholder="Description"></textarea>
-        <textarea id="newPostBody" id=""  placeholder="Type of animal"></textarea>
-        <textarea id="newPostBody" id="" placeholder="Size"></textarea>
-        <textarea id="newPostBody" id=""  placeholder="Age"></textarea>
-        <textarea id="newPostBody" id=""  placeholder="House size"></textarea>
-         <textarea id="newPostBody" id=""  placeholder="Good with children"></textarea>
-          <textarea id="newPostBody" id="" placeholder="Good with dogs"></textarea>
-           <textarea id="newPostBody" id=""  placeholder="Good with cats"></textarea>
-            <textarea id="newPostBody" id=""  placeholder="Do you have a yard"></textarea>
-             <textarea id="newPostBody" id=""  placeholder="Does your Cat have claws"></textarea>
-              <textarea id="newPostBody" id=""  placeholder="Is your pet Spayed or neutered"></textarea>
-               <textarea id="newPostBody" id=""  placeholder="Does your Pet have any special needs"></textarea>
-                <textarea id="newPostBody" id=""  placeholder="insert image here.."></textarea>
-                 <button>Post new pet</button>
-    </form>
- <div class="card">
-     <img src="http://placekitten.com/200/300" id="preview" />
-      <label class="file-upload-container" for="upload">
+<h3>New Pet Data</h3>
+<form id="newPostForm">
+    <textarea id="petName" placeholder="Pets Name"></textarea>
+    <textarea id="petDes" placeholder="Description"></textarea>
+    <textarea id="petType" placeholder="Type of animal"></textarea>
+    <textarea id="petBreed" placeholder="Breed"></textarea>
+    <textarea id="petSize" placeholder="Size"></textarea>
+    <textarea id="petAge" placeholder="Age"></textarea>
+    <textarea id="houseSize" placeholder="House size"></textarea>
+    <textarea id="children" placeholder="Good with children"></textarea>
+    <textarea id="dogs" placeholder="Good with dogs"></textarea>
+    <textarea id="cats" placeholder="Good with cats"></textarea>
+    <textarea id="yard" placeholder="Do you have a yard"></textarea>
+    <textarea id="claws" placeholder="Does your Cat have claws"></textarea>
+    <textarea id="sOrN" placeholder="Is your pet Spayed or neutered"></textarea>
+    <textarea id="special" placeholder="Does your Pet have any special needs"></textarea>
+    <textarea id="img" placeholder="insert image here.."></textarea>
+    <button>Post new pet</button>
+</form>
+<div class="card">
+    <img src="http://placekitten.com/200/300" id="preview" />
+    <label class="file-upload-container" for="upload">
         <input id="upload" type="file" style="display:none;">
         Select an Image
-      </label>
-    </div>
+    </label>
+</div>
 
 {{/if}}
 
 
 {{#each Posts }}
-    <div class="blogPost">
-        <h3>{{../username}} on {{formattedDate}} at {{formattedTime}}</h3>
-        {{#if ../isMyPage}}
-        <button class="delPostBtn" data-id={{id}}>Delete</button>
-        {{/if}}
-        <p>{{body}}
-            {{description}}
-            {{type}}
-            {{breed}}
-            {{size}}
-            {{age}}
-            {{houseSize}}
-            {{goodWithChildren}}
-            {{goodWithDogs}}
-            {{goodWithCats}}
-            {{hasYard}}
-            {{hasClaws}}
-            {{spayed}}
-            {{specialNeeds}}
-            {{image}}
-         
-           
-
-        </p>
-      {{/each}} 
-
-      <script src= "/js/profile.js"></script> 
-      <script src= "/js/favoritePet.js"></script> 
-      <script src = "/js/cloudinary.js"></script>
-<div class="container">
+<div class="blogPost">
+    <h3>{{../username}} on {{formattedDate}} at {{formattedTime}}</h3>
+    {{#if ../isMyPage}}
+    <button class="delPostBtn" data-id={{id}}>Delete</button>
+    {{/if}}
+    <p>{{body}}
+        {{description}}
+        {{type}}
+        {{breed}}
+        {{size}}
+        {{age}}
+        {{houseSize}}
+        {{goodWithChildren}}
+        {{goodWithDogs}}
+        {{goodWithCats}}
+        {{hasYard}}
+        {{hasClaws}}
+        {{spayed}}
+        {{specialNeeds}}
+        {{image}}
 
 
-<div class="col-md-6">
-    <h1>Set/reset your preferences by taking the quiz below</h1>
-    <a href="/survey">Take Survey</a>
-</div>
-</div>
 
+    </p>
+    {{/each}}
+
+    <script src="/js/profile.js"></script>
+    <script src="/js/favoritePet.js"></script>
+    <script src="/js/cloudinary.js"></script>
+    <div class="container">
+
+
+        <div class="col-md-6">
+            <h1>Set/reset your preferences by taking the quiz below</h1>
+            <a href="/survey">Take Survey</a>
+        </div>
+    </div>

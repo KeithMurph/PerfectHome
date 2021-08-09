@@ -3,9 +3,26 @@ const newPostForm = document.querySelector("#newPostForm");
 newPostForm?.addEventListener("submit",e=>{
     e.preventDefault();
     const postObj ={
-        body: document.querySelector("#newPostBody").value
+        name: document.querySelector("#petName").value,
+        description: document.querySelector("#petDes").value,
+        type: document.querySelector("#petType").value,
+        breed: document.querySelector("#petBreed").value,
+        size: document.querySelector("#petSize").value,
+        age: document.querySelector("#petAge").value,
+        house_size: document.querySelector("#houseSize").value,
+        good_with_children: document.querySelector("#children").value,
+        good_with_dogs: document.querySelector("#dogs").value,
+        good_with_cats: document.querySelector("#cats").value,
+        has_yard: document.querySelector("#yard").value,
+        has_claws: document.querySelector("#claws").value,
+        spayed: document.querySelector("#sOrN").value,
+        special_needs: document.querySelector("#special").value,
+        image_url: document.querySelector('preview').src,    
     }
-    fetch("/api/posts",{
+    
+    console.log(postObj)
+
+    fetch("/api/adoptable",{
         method:"POST",
         body:JSON.stringify(postObj),
         headers:{

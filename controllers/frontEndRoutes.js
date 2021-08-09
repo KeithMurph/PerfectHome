@@ -7,6 +7,7 @@ const Breed = require('../models/Breed')
 const { Adoptable } = require('../models');
 const petsData = require('../seed/petsData');
 const { compareSync } = require('bcrypt');
+const e = require('express');
 
 router.get('/', async (req, res) => {
     try {
@@ -14,8 +15,73 @@ router.get('/', async (req, res) => {
       const adoptableData = await Adoptable.findAll();
       const adoptableJson = adoptableData.map((adoptable => adoptable.get({ plain: true })));
 
+      // const randomPetArr =[]
+
+      // function generateRandom() {
+      //   //Generate random number
+      //   let random = adoptableJson(Math.floor(Math.random() * adoptableJson.length));
+    
+      //   //Coerce to number by boxing
+      //   // random = Number(random);
+    
+      //   if(!randomPetArr.includes(random)) {
+      //       randomPetArr.push(random);
+      //       return random;
+      //   } else {
+      //         console.log('No more pets available.')
+      //         return false;
+      //       }
+      //   }
+      //   console.log(randomPetArr)
+      //   generateRandom();
+    
+  
+
+
+    // let randomPetArr = []
+
+    // function random(){
+    //  const randomPet1 = adoptableJson(Math.floor(Math.random() * adoptableJson.length));
+
+    //  const randomPet2 = adoptableJson(Math.floor(Math.random() * adoptableJson.length));
+  
+    //  const randomPet3 = adoptableJson(Math.floor(Math.random() * adoptableJson.length));
+
+    //  const randomPet4 = adoptableJson(Math.floor(Math.random() * adoptableJson.length));
+
+    //  const randomPet5 = adoptableJson(Math.floor(Math.random() * adoptableData.length));
+
+    // randomPetArr.push(randomPet1)
+
+    //  if (randomPet1 === randomPet2){
+    //    random()
+    //  }else {
+    //    randomPetArr.push(randomPet2)
+    //  }
+
+    //  if (randomPet3 === randomPet2 || randomPet3 === randomPet1){
+    //   random()
+    // }else {
+    //   randomPetArr.push(randomPet3)
+    // }
+
+    // if (randomPet4 === randomPet3 || randomPet4 === randomPet2 || randomPet3 === randomPet1){
+    //   random()
+    // }else {
+    //   randomPetArr.push(randomPet4)
+    // }
+
+    // if (randomPet5 === randomPet4 || randomPet5 === randomPet3 ||randomPet5 === randomPet2 || randomPet5 === randomPet1){
+    //   random()
+    // }else {
+    //   randomPetArr.push(randomPet4)
+    // }
+    // } 
+
+
       res.render('homepage', { 
         adoptableJson, 
+
         randomPet1 : adoptableJson[Math.floor(Math.random() * adoptableJson.length)],
         randomPet2: adoptableJson[Math.floor(Math.random() * adoptableJson.length)],
         randomPet3: adoptableJson[Math.floor(Math.random() * adoptableJson.length)],
@@ -148,7 +214,7 @@ router.get('/adopt/:id', (req,res)=>{
 
     const adoptableJson = adoptable.get({plain:true});
 
-    res.render('fullPetCard', adoptableJson);
+    res.render('fullPetCard', {petsdata: adoptableJson, logged_inr: req.session.user});
   }).catch(err=>{
     console.log(err);
     res.status(500).json({message:"No dog found!"})

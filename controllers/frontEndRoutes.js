@@ -165,6 +165,15 @@ router.get("/adopt/preferences", async (req,res)=> {
 })
 
 
+router.post("/adopt", async (req,res) => {
+  db.Adoptable.create(req.body).then(newPet =>{
+    res.json(newPet);
+  }).catch(err=>{
+    console.log(err);
+    res.status(500).json(err);
+  })
+})
+
 router.get('/adopt/:id', (req,res)=>{
   db.Adoptable.findByPk(req.params.id).then(adoptable => {
 

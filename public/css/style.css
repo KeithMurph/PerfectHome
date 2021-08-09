@@ -1,3 +1,107 @@
+body{
+    background: url("https://i.pinimg.com/736x/5f/64/9c/5f649c728fc328958997f3feecbf3a7c.jpg");
+  }
+  
+  header {
+    text-align: center;
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px;
+  }
+  
+  a {
+    color: black;
+    background-color: lavender;
+    border: 1px solid lavender;
+    border-radius: 10%;
+    margin: 15px;
+    padding: 5px;
+  }
+
+  
+  .col-md-6 {
+    padding: 20px;
+  }
+  
+  .form-group {
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px
+  }
+  
+  .breed-card { 
+    background-color: white;
+  }
+  
+  #take-survey-button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  }
+  
+  #adopt-button {
+    
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  }
+  
+  .row {
+    background-color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-left: 400px;
+    margin-right: 400px;
+    border: 2px solid black
+  }
+   .spacing{
+     margin-bottom: 25px;
+     margin-top: 15px;
+   }
+  
+  .zipcode-form {
+    text-align: center;
+    align-items: center;
+  }
+  
+  .breed-info-form {
+    margin: 50px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  #quiz {
+    text-align: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .flex {
+    display: flex;
+    /* flex-wrap: wrap; */
+  }
+
+  .all {
+    background-color: white;
+    border: 2px solid black;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+.inline{
+  display:inline;
+}
+  
+  .gallery {
+    width: 100%;
+  }
+
+
 .card {
     background: white;
     display: flex;
@@ -25,3 +129,22 @@
       cursor: pointer;
       background: #3949AB;
   }
+
+
+  .size {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 500px;
+  }
+
+
+.adopt {
+  display: inline;
+  justify-content: center;
+}
+
+.carousel-item {
+  height: 400px;
+}

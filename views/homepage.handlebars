@@ -1,4 +1,5 @@
 <br><br>
+<div id="centering">
 <div class="row" id="quiz">
 <div class="col-md-6">
     <h5>Take the survey to see what pet is right for you!</h5>
@@ -10,17 +11,63 @@
   <a id="adopt-btn" href="/adopt">Adopt</a>
 
 </div>
-</div>
+</div> 
 
-<div class="gallery">
-  <div class="gallery-container">
-    <img class="gallery-item gallery-item-5" src="{{randomPet5.image_url}}">
-    <img class="gallery-item gallery-item-1" src="{{randomPet1.image_url}}">
-    <img class="gallery-item gallery-item-2" src="{{randomPet2.image_url}}">
-    <img class="gallery-item gallery-item-3" src="{{randomPet3.image_url}}">
-    <img class="gallery-item gallery-item-4" src="{{randomPet4.image_url}}">
+<div class="size">
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
   </div>
-  <div class="gallery-controls"></div>
-</div>
 
-<script src="/js/carousel.js"></script>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+     <a href="/adopt/{{randomPet1.id}}"><img src="{{randomPet1.image_url}}" class="d-block w-100" alt="dog1"></a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>{{randomPet1.name}}</h5>
+        <p>{{randomPet1.description}}</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a href="/adopt/{{randomPet2.id}}"><img src="{{randomPet2.image_url}}" class="d-block w-100" alt="dog2"></a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>{{randomPet2.name}}</h5>
+        <p>{{randomPet2.description}}</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a href="/adopt/{{randomPet3.id}}"><img src="{{randomPet3.image_url}}" class="d-block w-100" alt="dog3"></a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>{{randomPet3.name}}</h5>
+        <p>{{randomPet3.description}}</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a href="/adopt/{{randomPet4.id}}"><img src="{{randomPet4.image_url}}" class="d-block w-100" alt="dog4"></a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>{{randomPet4.name}}</h5>
+        <p>{{randomPet4.description}}</p>
+      </div>
+    </div>
+     <div class="carousel-item">
+      <a href="/adopt/{{randomPet5.id}}"><img src="{{randomPet5.image_url}}" class="d-block w-100" alt="dog5"></a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>{{randomPet5.name}}</h5>
+        <p>{{randomPet5.description}}</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+</div>

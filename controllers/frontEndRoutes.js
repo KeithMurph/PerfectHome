@@ -7,6 +7,7 @@ const Breed = require('../models/Breed')
 const { Adoptable } = require('../models');
 const petsData = require('../seed/petsData');
 const { compareSync } = require('bcrypt');
+const e = require('express');
 
 router.get('/', async (req, res) => {
     try {
@@ -16,6 +17,7 @@ router.get('/', async (req, res) => {
 
       res.render('homepage', { 
         adoptableJson, 
+
         randomPet1 : adoptableJson[Math.floor(Math.random() * adoptableJson.length)],
         randomPet2: adoptableJson[Math.floor(Math.random() * adoptableJson.length)],
         randomPet3: adoptableJson[Math.floor(Math.random() * adoptableJson.length)],
@@ -179,7 +181,7 @@ router.get('/adopt/:id', (req,res)=>{
 
     const adoptableJson = adoptable.get({plain:true});
 
-    res.render('fullPetCard', adoptableJson);
+    res.render('fullPetCard', {petsdata: adoptableJson, logged_inr: req.session.user});
   }).catch(err=>{
     console.log(err);
     res.status(500).json({message:"No dog found!"})

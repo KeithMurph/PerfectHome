@@ -10,7 +10,7 @@ const petsdata = [
         age: "Adult",
         house_size: "Large" ,
         good_with_children: true,
-        good_with_dogs:true,
+        good_with_dogs: true,
         good_with_cats:true,
         has_yard: true,
         has_claws: true,

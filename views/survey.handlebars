@@ -10,7 +10,7 @@
 		<h1>Perfect Home survey</h1>
 
 		<!-- pet type -->
-		<form class="pet-preferences" action="/adopt/preferences">
+		<form id="pet-preferences" action="/adopt/preferences">
 		<div class="col-sm-12 col-md-3 col-lg-4">
 			<p>What kind of pet are you looking for?</p>
 			<select name="type" id="type">
@@ -20,7 +20,7 @@
 		</div>
 			<!-- home type -->
 			<div class="col-sm-12 col-md-3 col-lg-4">
-			<p>What kind home will your new pet live in?</p>
+			<p>What kind of home will your new pet live in?</p>
 			<select name="house_size" id="house_size">
 				<option value="Small">Apartment</option>
 				<option value="Large">House</option>
@@ -58,6 +58,7 @@
 		<div class="col-sm-12 col-md-3 col-lg-4">
 			<p>Does the Size of your new pet matter to you?</p>
 			<select name="size" id="pet_size">
+
 				<option value="Large">Large</option>
 				<option value="Medium">Medium</option>
 				<option value="Small">Small</option>
@@ -92,14 +93,15 @@
 				<option value="false">No</option>
 			</select>
 		</div>
-		</form>
 
 		<div>
 			<br>
-			<button id="preference-btn" type="submit">Find Pets With These Preferences!</button>
+			<button id="preference-btn">Find Pets With These Preferences!</button>
 			<br>
 		</div>
-
+		</form>
 	</div>
 </div>
-</div>
+
+
+<script src="/js/survey.js"></script>

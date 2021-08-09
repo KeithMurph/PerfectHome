@@ -5,6 +5,7 @@ var CLOUDINARY_UPLOAD_PRESET = 'oce6ivs3'
 var preview = document.getElementById('preview');
 var upload = document.getElementById('upload');
 
+if(upload){
 upload.addEventListener('change', (event) =>  {
     var file = event.target.files[0];
     var formData = new FormData();
@@ -24,4 +25,5 @@ upload.addEventListener('change', (event) =>  {
     }).catch(err => {
         console.log(err)
     });
-});
+    });
+}

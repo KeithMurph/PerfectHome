@@ -16,9 +16,14 @@ body{
     margin: 20px;
   }
 
+
   #pic-sizing{
     padding: 10px;
     max-height:fit-content;
+    width: 600px;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .pet-preferences {
@@ -36,4 +41,10 @@ body{
 
   .spacing {
     margin: 15px auto 15px;
+  }
+
+  #pet-preferences{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }

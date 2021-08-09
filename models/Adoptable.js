@@ -42,12 +42,6 @@ Adoptable.init({
     good_with_cats:{
         type:DataTypes.BOOLEAN
     },
-    has_yard:{
-        type:DataTypes.BOOLEAN
-    },
-    has_claws:{
-        type:DataTypes.BOOLEAN
-    },
     spayed:{
         type:DataTypes.BOOLEAN
     },

@@ -143,16 +143,36 @@ router.get("/adopt", async (req,res)=> {
   }
 })
 
+router.get("/adopt/preferences", async (req,res)=> {
+  try{
+    const dbPetsData = await Adoptable.findAll({where: {
+      type:req.query.type,
+      size:req.query.size,
+      age:req.query.age,
+      house_size:req.query.house_size,
+      good_with_children:req.query.good_with_children === "true",
+      good_with_dogs:req.query.good_with_dogs === "true",
+      good_with_cats:req.query.good_with_cats === "true",
+      spayed:req.query.spayed === "true"
+    }});
+    const dogsData = dbPetsData.map((dogs)=> 
+    dogs.get({plain:true}));
+    res.render("preferences", {petsdata:dogsData, logged_inr: req.session.user});
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+})
+
+
 router.post("/adopt", async (req,res) => {
   db.Adoptable.create(req.body).then(newPet =>{
-   
     res.json(newPet);
   }).catch(err=>{
     console.log(err);
     res.status(500).json(err);
   })
 })
-
 
 router.get('/adopt/:id', (req,res)=>{
   db.Adoptable.findByPk(req.params.id).then(adoptable => {

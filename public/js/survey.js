@@ -1,6 +1,9 @@
 // Pet type Event listeners
 
 document.getElementById("petTypeBtn").addEventListener("click", function() {
+    
+    
+    
     petParams.push(type.value)
 
     if(type.value === "type:Dog"){
@@ -9,7 +12,8 @@ document.getElementById("petTypeBtn").addEventListener("click", function() {
         document.getElementById("typeConfirm").innerText="😺Cat"
     }
 
-    console.log(petParams)
+
+    
 });
 
 // house type Listener/confirm
@@ -24,7 +28,7 @@ document.getElementById("homeTypeBtn").addEventListener("click", function() {
 
     }
 
-    console.log(petParams)
+    
 });
 
 // yard type Listener/confirm 
@@ -38,7 +42,7 @@ document.getElementById("yardTypeBtn").addEventListener("click", function() {
        document.getElementById("yardTypeConfirm").innerText="🔑No yard"
    }
 
-    console.log(petParams)
+   
 });
 
 // good with dogs Listener/confirm
@@ -52,7 +56,7 @@ document.getElementById("otherDogBtn").addEventListener("click", function() {
         document.getElementById("goodWithDogsConfirm").innerText="🤷‍♀️ I need a dog!"
     }
 
-    console.log(petParams)
+   
 });
 
 // good with cats Listener/confirm
@@ -66,7 +70,7 @@ document.getElementById("otherCatBtn").addEventListener("click", function() {
         document.getElementById("goodWithCatsConfirm").innerText="🤷‍♀️ I need a cat!"
     }
 
-    console.log(petParams)
+    
 });
 
 // good with children Listener/confirm
@@ -80,7 +84,7 @@ document.getElementById("childrenBtn").addEventListener("click", function() {
         document.getElementById("goodWithChildrenConfirm").innerText="🎅 I don't have children"
     }
 
-    console.log(petParams)
+    
 });
 
 // pet size Listener/confirm
@@ -98,7 +102,7 @@ document.getElementById("petSizeBtn").addEventListener("click", function() {
     document.getElementById("sizeConfirm").innerText="🦕 I'll take anything"
 } 
 
-    console.log(petParams)
+    
 });
 
 
@@ -119,7 +123,7 @@ document.getElementById("petAgeBtn").addEventListener("click", function() {
     document.getElementById("ageConfirm").innerText="🦕 I'll take anything"
    } 
 
-    console.log(petParams)
+    
 });
 
 // cat claw Listener/confirm
@@ -135,7 +139,7 @@ document.getElementById("clawedBtn").addEventListener("click", function() {
     document.getElementById("clawConfirm").innerText="💅 Please don't declaw your pets!"
 }
 
-    console.log(petParams)
+    
 });
 
 // pet spayed/neutered Listener/confirm
@@ -149,7 +153,7 @@ document.getElementById("spayedBtn").addEventListener("click", function() {
 }
 
    
-    console.log(petParams)
+    
 });
 
 // pet special needs Listener/Conform
@@ -161,10 +165,27 @@ document.getElementById("specialBtn").addEventListener("click", function() {
     }else{
         document.getElementById("specialConfirm").innerText="🐱‍🚀 I've got enough on my plate"
     }
+    
+    console.log(petParams);
 
-    console.log(petParams)
 });
 
+// petParams array rules
 var petParams = [];
+
+// function uniqueElements(petParams) {
+//     const unique=[];
+//     petParams.each((type.value)=>{
+//         if(!unique.includes(type.value)){
+//             unique.push(type.value)
+//         }
+//     })
+//     return unique;
+// }
+
+
+
+
+
 
 console.log(petParams);

@@ -19,6 +19,7 @@ Adoptable.init({
     },
     type:{
         type:DataTypes.STRING
+       
     },
     breed:{
         type:DataTypes.STRING

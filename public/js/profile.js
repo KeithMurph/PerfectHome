@@ -1,40 +1,4 @@
-// const newPostForm = document.querySelector("#newPostForm");
 
-// newPostForm?.addEventListener("submit",e=>{
-//     e.preventDefault();
-//     const postObj ={
-//         body: document.querySelector("#newPostBody").value
-//     }
-//     fetch("/api/posts",{
-//         method:"POST",
-//         body:JSON.stringify(postObj),
-//         headers:{
-//             "Content-Type":"application/json"
-//         }
-//     }).then(res=>{
-//         if(res.ok){
-//             location.reload();
-//         } else {
-//             alert("oh no!!!!")
-
-//         }
-//     })
-// })
-
-// document.addEventListener("click",e=>{
-//     if(e.target.matches(".delPostBtn")){
-//         const idToDel = e.target.getAttribute("data-id");
-//         fetch(`/api/posts/${idToDel}`,{
-//             method:"DELETE"
-//         }).then(res=>{
-//             if(res.ok) {
-//                 location.reload();
-//             } else {
-//                 alert("womp womp")
-//             }
-//         })
-//     }
-// })
 
 // write to new pet card NAME from form
 function magicInputName() {
@@ -129,3 +93,44 @@ document.getElementById("newSpayedBtn").addEventListener("click", function () {
     document.getElementById("newPetSpayed").innerText = "No";
   }
 });
+
+
+
+
+
+// post new pet
+document.getElementById("postNewPet").addEventListener("click", function () {
+ const newPet ={
+   name:document.querySelector("#newPetsNameForm").value,
+   description:document.querySelector("#newDescriptionForm").value,
+   breed:document.querySelector("#newPetsBreed").value,
+   type:document.querySelector("#newPetTypeForm").value,
+   size:document.querySelector("#newPetSizeForm").value,
+   age:document.querySelector("#newPetAgeForm").value,
+   good_with_children:document.querySelector("#newGoodWithChildrenForm").value,
+   good_with_dogs:document.querySelector("#newGoodWithDogsForm").value,
+   good_with_cats:document.querySelector("#newGoodWithCatsForm").value,
+   spayed:document.querySelector("#newSpayedForm").value,
+   image_url: document.querySelector("#preview").src
+ }
+ console.log(newPet)
+ fetch("/api/adoptable",{
+  method:"POST",
+  body:JSON.stringify(newPet),
+  headers:{
+      "Content-Type":"application/json"
+  }
+}).then(res=>{
+  if(res.ok){
+      console.log("success")
+      res.json().then(data=>{
+          location.assign(`/adopt`)
+      })
+  } else {
+      alert("error!")
+  }
+})
+})
+
+
+var newPetData = {}

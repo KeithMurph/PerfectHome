@@ -48,12 +48,9 @@ Adoptable.init({
     special_needs:{
         type:DataTypes.BOOLEAN
     },
-<<<<<<< HEAD
     phone_number:{
         type:DataTypes.STRING
     },
-=======
->>>>>>> Develop
     image_url:{
         type:DataTypes.TEXT
     },

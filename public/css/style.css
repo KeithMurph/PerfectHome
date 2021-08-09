@@ -17,14 +17,7 @@ body{
     margin: 15px;
     padding: 5px;
   }
-  
-  .h5 {
-  padding: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  }
+
   
   .col-md-6 {
     padding: 20px;
@@ -144,7 +137,6 @@ body{
     margin-right: auto;
     width: 50%;
     height: 500px;
-    background-color: bisque;
   }
 
 
@@ -153,3 +145,6 @@ body{
   justify-content: center;
 }
 
+.carousel-item {
+  height: 400px;
+}

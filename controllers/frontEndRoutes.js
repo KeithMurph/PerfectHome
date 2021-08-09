@@ -15,70 +15,6 @@ router.get('/', async (req, res) => {
       const adoptableData = await Adoptable.findAll();
       const adoptableJson = adoptableData.map((adoptable => adoptable.get({ plain: true })));
 
-      // const randomPetArr =[]
-
-      // function generateRandom() {
-      //   //Generate random number
-      //   let random = adoptableJson(Math.floor(Math.random() * adoptableJson.length));
-    
-      //   //Coerce to number by boxing
-      //   // random = Number(random);
-    
-      //   if(!randomPetArr.includes(random)) {
-      //       randomPetArr.push(random);
-      //       return random;
-      //   } else {
-      //         console.log('No more pets available.')
-      //         return false;
-      //       }
-      //   }
-      //   console.log(randomPetArr)
-      //   generateRandom();
-    
-  
-
-
-    // let randomPetArr = []
-
-    // function random(){
-    //  const randomPet1 = adoptableJson(Math.floor(Math.random() * adoptableJson.length));
-
-    //  const randomPet2 = adoptableJson(Math.floor(Math.random() * adoptableJson.length));
-  
-    //  const randomPet3 = adoptableJson(Math.floor(Math.random() * adoptableJson.length));
-
-    //  const randomPet4 = adoptableJson(Math.floor(Math.random() * adoptableJson.length));
-
-    //  const randomPet5 = adoptableJson(Math.floor(Math.random() * adoptableData.length));
-
-    // randomPetArr.push(randomPet1)
-
-    //  if (randomPet1 === randomPet2){
-    //    random()
-    //  }else {
-    //    randomPetArr.push(randomPet2)
-    //  }
-
-    //  if (randomPet3 === randomPet2 || randomPet3 === randomPet1){
-    //   random()
-    // }else {
-    //   randomPetArr.push(randomPet3)
-    // }
-
-    // if (randomPet4 === randomPet3 || randomPet4 === randomPet2 || randomPet3 === randomPet1){
-    //   random()
-    // }else {
-    //   randomPetArr.push(randomPet4)
-    // }
-
-    // if (randomPet5 === randomPet4 || randomPet5 === randomPet3 ||randomPet5 === randomPet2 || randomPet5 === randomPet1){
-    //   random()
-    // }else {
-    //   randomPetArr.push(randomPet4)
-    // }
-    // } 
-
-
       res.render('homepage', { 
         adoptableJson, 
 
@@ -230,6 +166,15 @@ router.get("/adopt/preferences", async (req,res)=> {
   }
 })
 
+
+router.post("/adopt", async (req,res) => {
+  db.Adoptable.create(req.body).then(newPet =>{
+    res.json(newPet);
+  }).catch(err=>{
+    console.log(err);
+    res.status(500).json(err);
+  })
+})
 
 router.get('/adopt/:id', (req,res)=>{
   db.Adoptable.findByPk(req.params.id).then(adoptable => {

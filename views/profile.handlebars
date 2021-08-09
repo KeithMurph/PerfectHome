@@ -1,134 +1,81 @@
 <div class="all">
 <h1>{{username}}'s page</h1>
-
-<nav>
+<nav style="text-align: center; background-color:cadetblue">
   <a href="/survey">Take Survey</a>
-  <a href="/profile/favoritePets">Look at Favorite Pets</a>
-
 </nav>
-
-<div style="background-color: bisque;">
-
+<div style="background-color: white; text-align:left; max-width: 50%;">
   <h3>Post Pet for adoption</h3>
-
   {{! name }}
   <input id="newPetsNameForm" oninput="magicInputName();" placeholder="Name" />
   {{!description  }}
   <input
-    id="newDescriptionForm"
+id="newDescriptionForm"
     oninput="magicInputDescription();"
     placeholder="Description"
   />
-
-  {{! pet age }}
-
-  <input id="newAgeForm" oninput="magicInputAge();" placeholder="Age" />
-
+{{!-- breed --}}
+<input id="newPetsBreed" placeholder="breed">
   {{! type of pet }}
-
   <p>Type of pet</p>
-
   <select id="newPetTypeForm">
-
-    <option value="type:Dog">Dog</option>
-    <option value="type:Cat">Cat</option>
+    <option value="Dog">Dog</option>
+    <option value="Cat">Cat</option>
   </select>
   <button id="newPetTypeBtn">submit</button>
   {{! pet size }}
-
   <p>Size of pet</p>
   <select id="newPetSizeForm">
-
-    <option value="size:Large">Large</option>
-    <option value="size:Medium">Medium</option>
-    <option value="size:Small">Small</option>
+    <option value="Large">Large</option>
+    <option value="Medium">Medium</option>
+    <option value="Small">Small</option>
   </select>
   <button id="newPetSizeBtn">submit</button>
-
   {{! pet age range }}
-
   <p>Age of pet</p>
   <select id="newPetAgeForm">
-
-    <option value="age:Baby">Baby</option>
-    <option value="age:Young">Young</option>
-    <option value="age:Adult">Adult</option>
-    <option value="age:Senior">Senior</option>
-
+    <option value="Baby">Baby</option>
+    <option value="Young">Young</option>
+    <option value="Adult">Adult</option>
+    <option value="Senior">Senior</option>
   </select>
   <button id="newPetAgeBtn">submit</button>
-
   {{! good with children }}
-
   <p>Is the pet good with children</p>
   <select id="newGoodWithChildrenForm">
-
-    <option value="good_with_children:true">Yes</option>
-    <option value="good_with_children:fasle">No</option>
+    <option value="true">Yes</option>
+    <option value="false">No</option>
   </select>
   <button id="newChildrenBtn">submit</button>
-
   {{! good with dogs }}
   <p>Is the pet good with other dogs?</p>
   <select id="newGoodWithDogsForm">
-    <option value="good_with_dogs:true">Yes</option>
-    <option value="good_with_dogs:false">No</option>
+    <option value="true">Yes</option>
+    <option value="false">No</option>
   </select>
   <button id="newDogBtn">submit</button>
-
   {{!good with cats  }}
-
   <p>Is the pet good with other cats?</p>
   <select id="newGoodWithCatsForm">
-    <option value="good_with_cats:true">Yes</option>
-    <option value="good_with_cats:false">No</option>
+    <option value="true">Yes</option>
+    <option value="false">No</option>
   </select>
   <button id="newCatBtn">submit</button>
-
   {{! spayed }}
   <p>Is the pet spayed/neutered?</p>
   <select id="newSpayedForm">
-    <option value="spayed:true">Yes</option>
-    <option value="spayed:false">No</option>
+    <option value="true">Yes</option>
+    <option value="false">No</option>
   </select>
   <button id="newSpayedBtn">submit</button>
-
-  <button>Post new pet</button>
-
-  <div class="card">
+ 
+  <div style="background-color: white;" class="card">
     <img src="http://placekitten.com/200/300" id="preview" />
     <label class="file-upload-container" for="upload">
       <input id="upload" type="file" style="display:none;" />
       Select an Image
     </label>
   </div>
-
-</div>
-
-<div id="newPetCard" style="background-color: bisque;">
-
-  <h3>Name:</h3>
-  <p id="newName"></p>
-  <h3>Description:</h3>
-  <p id="newDescription"></p>
-  <h3>Pet type:</h3>
-  <p id="newPetType"></p>
-  <h3>Size:</h3>
-  <p id="newPetSize"></p>
-  <h3>Age range:</h3>
-  <p id="newPetAgeRange"></p>
-  <h3>Age:</h3>
-  <p id="newPetAge"></p>
-  <h3>Good with children:</h3>
-  <p id="newGoodWithChildren"></p>
-  <h3>Good with dogs:</h3>
-  <p id="newGoodWithDogs"></p>
-  <h3>Good with Cats:</h3>
-  <p id="newGoodWithCats"></p>
-  <h3>Spayed/Neutered:</h3>
-  <p id="newPetSpayed"></p>
-
-</div>
+   <button id="postNewPet">Post new pet</button>
 </div>
 <script src="/js/profile.js"></script>
 <script src="/js/favoritePet.js"></script>

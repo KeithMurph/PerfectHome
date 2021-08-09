@@ -1,114 +1,105 @@
 <br><br>
 <div class="all">
-	<!-- -->
-
-	<h1>🐕Find a dog that matches you🏡</h1>
+	<h1>🐕 Find a pet that matches you 🏡</h1>
 </div>
-<!--main body of quiz-->
-<div class="all">
-	<div id="quizBody">
-		<!-- -->
-		<h1>PerfectHome survey</h1>
 
+<!--main body of quiz-->
+
+<div class="all">
+	<div>
+		<h1>Perfect Home survey</h1>
 
 		<!-- pet type -->
-		<p>What kind of pet are you looking for?</p>
-		<form id="pet-preferences" action="/adopt/preferences">
+		<form class="pet-preferences" action="/adopt/preferences">
+		<div class="col-sm-12 col-md-3 col-lg-4">
+			<p>What kind of pet are you looking for?</p>
 			<select name="type" id="type">
-
 				<option value="Dog">Dog</option>
 				<option value="Cat">Cat</option>
 			</select>
-
-
+		</div>
 			<!-- home type -->
+			<div class="col-sm-12 col-md-3 col-lg-4">
 			<p>What kind home will your new pet live in?</p>
 			<select name="house_size" id="house_size">
-
 				<option value="Small">Apartment</option>
 				<option value="Large">House</option>
 			</select>
-
+			</div>
 
 			<!-- other dogs  -->
+		<div class="col-sm-12 col-md-3 col-lg-4">
 			<p>Do you currently have dog(s) at home?</p>
 			<select name="good_with_dogs" id="good_with_dogs">
-
 				<option value="true">Yes</option>
 				<option value="false">No</option>
 			</select>
-
+		</div>
 
 			<!-- other cats -->
+			<div class="col-sm-12 col-md-3 col-lg-4">
 			<p>Do you currently have cat(s) at home?</p>
 			<select name="good_with_cats" id="good_with_cats">
-
 				<option value="true">Yes</option>
 				<option value="false">No</option>
 			</select>
-
+		</div>
 
 			<!-- children -->
-
+			<div class="col-sm-12 col-md-3 col-lg-4">
 			<p>Do you have children in your home?</p>
 			<select name="good_with_children" id="good_with_children">
-
 				<option value="true">Yes</option>
 				<option value="false">No</option>
 			</select>
-
+		</div>
 
 			<!-- pet size -->
+		<div class="col-sm-12 col-md-3 col-lg-4">
 			<p>Does the Size of your new pet matter to you?</p>
 			<select name="size" id="pet_size">
-
 				<option value="Large">Large</option>
 				<option value="Medium">Medium</option>
 				<option value="Small">Small</option>
 			</select>
-
+		</div>
 
 			<!-- pet age -->
+		<div class="col-sm-12 col-md-3 col-lg-4">
 			<p>Is the age of the pet important to you?</p>
 			<select name="age" id="pet_age">
-
 				<option value="Baby">Baby</option>
 				<option value="Young">Young</option>
 				<option value="Adult">Adult</option>
 				<option value="Senior">Senior</option>
-
-
 			</select>
-
-
+		 </div>
 
 			<!-- spayed or neutered  -->
+		<div class="col-sm-12 col-md-3 col-lg-4">
 			<p>Are you looking for a pet that is already Spayed/Neutered?</p>
 			<select name="spayed" id="spayed">
-
 				<option value="true">Yes</option>
 				<option value="false">No</option>
 			</select>
-
+		</div>
 
 			<!-- special needs pet -->
+		<div class="col-sm-12 col-md-3 col-lg-4">
 			<p>Are you willing to take on a special needs pet?</p>
 			<select name="special_needs" id="special_needs">
-
 				<option value="true">Yes</option>
 				<option value="false">No</option>
 			</select>
-
-
-
-			<button id="preference-btn" type="submit">Find Pets With These Preferences!</button>
+		</div>
 		</form>
+
+		<div>
+			<br>
+			<button id="preference-btn" type="submit">Find Pets With These Preferences!</button>
+			<br>
+		</div>
+
 	</div>
-
 </div>
-
 </div>
-
-{{!--
-<script src="/js/survey.js"></script>
-<script src="/js/preferences.js"></script> --}}

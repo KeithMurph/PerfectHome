@@ -8,7 +8,6 @@ const PORT = process.env.PORT || 3002;
 const allRoutes = require('./controllers');
 const db = require('./models')
 
-
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -19,14 +18,10 @@ app.use(express.static('public'));
 
 const exphbs = require('express-handlebars');
 
-
 const hbs = exphbs.create({});
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
-
-app.engine('handlebars', hbs.engine);
-app.set('view engine', 'handlebars');
 
 const session = require("express-session")
 const SequelizeStore = require('connect-session-sequelize')(session.Store);

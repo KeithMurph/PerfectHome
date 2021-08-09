@@ -19,6 +19,7 @@ Adoptable.init({
     },
     type:{
         type:DataTypes.STRING
+       
     },
     breed:{
         type:DataTypes.STRING
@@ -41,17 +42,14 @@ Adoptable.init({
     good_with_cats:{
         type:DataTypes.BOOLEAN
     },
-    has_yard:{
-        type:DataTypes.BOOLEAN
-    },
-    has_claws:{
-        type:DataTypes.BOOLEAN
-    },
     spayed:{
         type:DataTypes.BOOLEAN
     },
     special_needs:{
         type:DataTypes.BOOLEAN
+    },
+    phone_number:{
+        type:DataTypes.STRING
     },
     image_url:{
         type:DataTypes.TEXT

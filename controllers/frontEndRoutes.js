@@ -4,37 +4,27 @@ const db = require('../models');
 const withAuth = require('../utils/auth');
 const Breed = require('../models/Breed')
 
-// router.get("/", aysnc (req,res) => {
-//    try {
-//      const data = await db.Adoptable.findAll().then(data => {
-//         const allAdoptable = data.map(adoptable=> adoptable.get({
-//             plain:true
-//         }))
-//         res.render("homepage", {layout:"dashboard", allAdoptable})
-//     })
-// })
-
 const { Adoptable } = require('../models');
 const petsData = require('../seed/petsData');
 const { compareSync } = require('bcrypt');
+const e = require('express');
 
 router.get('/', async (req, res) => {
     try {
     
       const adoptableData = await Adoptable.findAll();
       const adoptableJson = adoptableData.map((adoptable => adoptable.get({ plain: true })));
-  
-      // console.log(randomPets)
-      // console.log(adoptableData)
 
       res.render('homepage', { 
         adoptableJson, 
+
         randomPet1 : adoptableJson[Math.floor(Math.random() * adoptableJson.length)],
         randomPet2: adoptableJson[Math.floor(Math.random() * adoptableJson.length)],
         randomPet3: adoptableJson[Math.floor(Math.random() * adoptableJson.length)],
         randomPet4: adoptableJson[Math.floor(Math.random() * adoptableJson.length)],
         randomPet5: adoptableJson[Math.floor(Math.random() * adoptableJson.length)],
         logged_inr: req.session.user 
+
       });
     } catch (err) {
       res.status(500).json(err);
@@ -42,7 +32,7 @@ router.get('/', async (req, res) => {
 
   });
 
-//   //login
+//login
 router.get("/login", (req,res) =>{
   console.log(req.session)
     if(req.session.user){
@@ -68,10 +58,12 @@ router.get("/signUp", (req,res) =>{
     res.render("createUser")
 })
 
+// survey
 router.get('/survey', (req,res)=>{
-    res.render('survey');
+    res.render('survey', {logged_inr: req.session.user });
 })
 
+// get all breeds
 router.get("/breeds", (req,res)=> {
   if(req.session.user){
   res.render("breedInfo",
@@ -81,6 +73,7 @@ res.render('breedInfo')
 }
 })
 
+// login
 router.get("/profile", withAuth, (req,res) =>{
     if(req.session.user){
      db.User.findByPk(req.session.user.id,{
@@ -104,9 +97,7 @@ router.get("/session",(req,res)=>{
   })
 })
 
-
- 
-
+// profile by id
 router.get("/profile/:id",(req,res)=>{
   db.User.findByPk(req.params.id,{
       include:[{
@@ -147,17 +138,50 @@ router.get("/adopt", async (req,res)=> {
     const dbPetsData = await Adoptable.findAll();
     const dogsData = dbPetsData.map((dogs)=> 
     dogs.get({plain:true}));
-    res.render("adoptableDogs", {petsdata:dogsData});
+    res.render("adoptableDogs", {petsdata:dogsData, logged_inr: req.session.user});
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
   }
 })
 
+router.get("/adopt/preferences", async (req,res)=> {
+  try{
+    const dbPetsData = await Adoptable.findAll({where: {
+      type:req.query.type,
+      size:req.query.size,
+      age:req.query.age,
+      house_size:req.query.house_size,
+      good_with_children:req.query.good_with_children === "true",
+      good_with_dogs:req.query.good_with_dogs === "true",
+      good_with_cats:req.query.good_with_cats === "true",
+      spayed:req.query.spayed === "true"
+    }});
+    const dogsData = dbPetsData.map((dogs)=> 
+    dogs.get({plain:true}));
+    res.render("preferences", {petsdata:dogsData, logged_inr: req.session.user});
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+})
+
+
+router.post("/adopt", async (req,res) => {
+  db.Adoptable.create(req.body).then(newPet =>{
+    res.json(newPet);
+  }).catch(err=>{
+    console.log(err);
+    res.status(500).json(err);
+  })
+})
+
 router.get('/adopt/:id', (req,res)=>{
   db.Adoptable.findByPk(req.params.id).then(adoptable => {
-    const adoptableJson = adoptable.get({plain:true})
-    res.render('fullPetCard', adoptableJson);
+
+    const adoptableJson = adoptable.get({plain:true});
+
+    res.render('fullPetCard', {petsdata: adoptableJson, logged_inr: req.session.user});
   }).catch(err=>{
     console.log(err);
     res.status(500).json({message:"No dog found!"})

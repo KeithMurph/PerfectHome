@@ -6,7 +6,6 @@ signupForm.addEventListener("submit",(e)=>{
         email:document.querySelector("#signupEmail").value,
         username:document.querySelector("#signupUsername").value,
         password:document.querySelector("#signupPassword").value,
-        zipcode:document.querySelector('#signupZipcode').value,
     }
     fetch("/api/users/create",{
         method:"POST",

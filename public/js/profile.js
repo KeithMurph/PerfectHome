@@ -95,6 +95,8 @@ document.getElementById("postNewPet").addEventListener("click", function () {
    good_with_dogs:document.querySelector("#newGoodWithDogsForm").value,
    good_with_cats:document.querySelector("#newGoodWithCatsForm").value,
    spayed:document.querySelector("#newSpayedForm").value,
+   phone_number:document.querySelector("#newPhoneForm").value,
+  
    image_url: document.querySelector("#preview").src
  }
  console.log(newPet)

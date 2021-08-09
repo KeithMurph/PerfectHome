@@ -77,3 +77,44 @@ document.getElementById("newSpayedBtn").addEventListener("click", function () {
     document.getElementById("newPetSpayed").innerText = "No";
   }
 });
+
+
+
+
+
+// post new pet
+document.getElementById("postNewPet").addEventListener("click", function () {
+ const newPet ={
+   name:document.querySelector("#newPetsNameForm").value,
+   description:document.querySelector("#newDescriptionForm").value,
+   breed:document.querySelector("#newPetsBreed").value,
+   type:document.querySelector("#newPetTypeForm").value,
+   size:document.querySelector("#newPetSizeForm").value,
+   age:document.querySelector("#newPetAgeForm").value,
+   good_with_children:document.querySelector("#newGoodWithChildrenForm").value,
+   good_with_dogs:document.querySelector("#newGoodWithDogsForm").value,
+   good_with_cats:document.querySelector("#newGoodWithCatsForm").value,
+   spayed:document.querySelector("#newSpayedForm").value,
+   image_url: document.querySelector("#preview").src
+ }
+ console.log(newPet)
+ fetch("/api/adoptable",{
+  method:"POST",
+  body:JSON.stringify(newPet),
+  headers:{
+      "Content-Type":"application/json"
+  }
+}).then(res=>{
+  if(res.ok){
+      console.log("success")
+      res.json().then(data=>{
+          location.assign(`/adopt`)
+      })
+  } else {
+      alert("error!")
+  }
+})
+})
+
+
+var newPetData = {}

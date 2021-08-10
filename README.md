@@ -41,6 +41,12 @@ Adoptable Dogs:
 Posting New Pet:
 ![image](https://user-images.githubusercontent.com/84876493/128796845-5aa09e7b-af49-4c80-ac79-db07a52fa5a8.png)
 
+Mobile Views:
+![image](https://user-images.githubusercontent.com/84876493/128905690-533dcbe1-a123-4756-bfae-b6c11950bb48.png)
+![image](https://user-images.githubusercontent.com/84876493/128905715-e4410121-7f68-428c-8988-2dc9f041b0cd.png)
+
+
+
 
  ## Usage
  To help pets find the Perfect Home based on a user's given criteria.

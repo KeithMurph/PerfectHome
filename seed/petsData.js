@@ -1078,6 +1078,7 @@ const petsdata = [
         has_claws: true,
         spayed: false,
         special_needs: false ,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://a-z-animals.com/media/2019/10/American-Cocker-Spaniel-puppy.jpg"
     },
     {
@@ -1095,6 +1096,7 @@ const petsdata = [
         has_claws: true,
         spayed: true,
         special_needs: false ,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://www.purina.com.au/-/media/project/purina/main/breeds/dog/dog_american-cocker-spaniel_desktop.jpg?h=475&la=en&w=825&hash=CA9E38C5A3E1A389A588DF581C066E28"
     },
     {
@@ -1112,6 +1114,7 @@ const petsdata = [
         has_claws: true,
         spayed: true,
         special_needs: false ,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://i2.wp.com/barkercise.com/wp-content/uploads/2021/02/gettyimages-584973021-612x612-1.jpg?fit=612%2C408&ssl=1"
     },
     {
@@ -1129,6 +1132,7 @@ const petsdata = [
         has_claws: true,
         spayed: true,
         special_needs: true ,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2021%2F06%2F16%2Fcocker-spaniel-on-bed-233218901-2000.jpg"
     },
     {
@@ -1146,6 +1150,7 @@ const petsdata = [
         has_claws: true,
         spayed: true,
         special_needs: true ,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://g77v3827gg2notadhhw9pew7-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/CSFT2-1-1024x682.jpg"
     },
     {
@@ -1163,6 +1168,7 @@ const petsdata = [
         has_claws: true,
         spayed: true,
         special_needs: false ,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://dogtime.com/assets/uploads/gallery/cavalier-king-charles-spaniel-dog-breed-pictures/6-sittingforward.jpg"
     },
     {
@@ -1180,6 +1186,7 @@ const petsdata = [
         has_claws: true,
         spayed: false,
         special_needs: false ,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2009/01/06180034/Cavalier-King-Charles-Spaniel-head-portrait-outdoors.jpg"
     },
     {
@@ -1197,6 +1204,7 @@ const petsdata = [
         has_claws: true,
         spayed: false,
         special_needs: false ,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://www.keystonepuppies.com/wp-content/uploads/2018/09/Cavalier-1.jpg"
     },
     {
@@ -1214,6 +1222,7 @@ const petsdata = [
         has_claws: true,
         spayed: false,
         special_needs: true ,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://i.pinimg.com/originals/26/73/07/267307e591a48e753a9d325f075d2b95.jpg"
     },
     {
@@ -1231,6 +1240,7 @@ const petsdata = [
         has_claws: true,
         spayed: false,
         special_needs: false ,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://vetstreet.brightspotcdn.com/dims4/default/01960a2/2147483647/thumbnail/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2F0e%2Ffb0610a10711e087a80050568d634f%2Ffile%2FMastiff-2-645mk062111.jpg"
     },
     {
@@ -1248,6 +1258,7 @@ const petsdata = [
         has_claws: true,
         spayed: true,
         special_needs: true ,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://www.akc.org/wp-content/uploads/2017/03/mastiff_breeds_hero.jpg"
     },
      {
@@ -1265,6 +1276,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://i.pinimg.com/originals/33/b8/2c/33b82caf9509ddad87aa762e5f07dfd9.png"
     },
     {
@@ -1282,6 +1294,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://upload.wikimedia.org/wikipedia/commons/a/a5/Newfoundland_dog_Smoky.jpg"
     },
 
@@ -1300,6 +1313,7 @@ const petsdata = [
         has_claws:true,
         spayed: false,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://www.allthingsdogs.com/wp-content/uploads/2020/02/Newfoundland-Dog.jpg"
     },
 
@@ -1318,6 +1332,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:true,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://s36700.pcdn.co/wp-content/uploads/2015/05/newfoundland-black-white.jpg.optimal.jpg"
     },
 
@@ -1336,6 +1351,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:true,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://vetstreet.brightspotcdn.com/dims4/default/1d4a79d/2147483647/crop/0x0%2B0%2B0/resize/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2F92%2F94d720a7fc11e0a0d50050568d634f%2Ffile%2FSaint-bernard-3-645mk062811.jpg"
     },
 
@@ -1354,6 +1370,7 @@ const petsdata = [
         has_claws:true,
         spayed: false,
         special_needs:true,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/19181856/Saint-Bernard-laying-down-in-the-grass.jpg"
     },
 
@@ -1372,6 +1389,7 @@ const petsdata = [
         has_claws:true,
         spayed: false,
         special_needs:true,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://images.ctfassets.net/ub3bwfd53mwy/3nRF2ioESX4kgRbhD2utoQ/4604345554be72dea5c542752fba240c/Gabapentin_for_cats__22_.png"
     },
 

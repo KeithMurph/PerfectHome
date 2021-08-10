@@ -15,6 +15,7 @@ SO THAT I can browse available pets that are suited for me and my family
 
  ## Table of Contents
  - [Installation](#howToInstall)
+ - [Mock Up] (#mockUp)
  - [Usage](#usage)
  - [Credits](#credits)
  - [Licence](#license)
@@ -30,8 +31,19 @@ SO THAT I can browse available pets that are suited for me and my family
  - mysql2
  - sequalize
 
+## Mock Up
+Homepage:
+![image](https://user-images.githubusercontent.com/84876493/128796691-c230e9bb-4470-4665-8538-2f05a07f41fa.png)
+
+Adoptable Dogs:
+![image](https://user-images.githubusercontent.com/84876493/128796759-1f1e285b-2368-40c5-8901-5741dc29fe93.png)
+
+Posting New Pet:
+![image](https://user-images.githubusercontent.com/84876493/128796845-5aa09e7b-af49-4c80-ac79-db07a52fa5a8.png)
+
+
  ## Usage
- To help pets find the PerfectHome based on a user's given criteria.
+ To help pets find the Perfect Home based on a user's given criteria.
     
    
 
@@ -58,7 +70,7 @@ Keith Murphy
 - Email 
   keithmurphy94@gmail.com
 
-Megan Andrewartha
+Meghan Andrewartha
 
 - Github profile
   https://github.com/mandrewartha

@@ -1,7 +1,5 @@
-
-
-
 async function handleSubmit(event) {
+    console.log('hello')
     event.preventDefault();
     const petType = document.querySelector("select[name='petType']").value;
     const homeType = document.getElementById("house_size").value
@@ -28,9 +26,9 @@ async function handleSubmit(event) {
     
 }
 
-document.querySelector("#pet-preferences").addEventListener("submit", handleSubmit)
 
 const preferenceBtn = document.querySelector("#preference-btn")
+preferenceBtn.addEventListener("submit", handleSubmit)
 
 // preferenceBtn.addEventListener("click", event =>{
 //     handleSubmit()

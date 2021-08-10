@@ -16,23 +16,25 @@ const petsdata = [
         has_claws: true,
         spayed: true,
         special_needs: false ,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2021/01/06191159/German-Shepherd-Dog-head-portrait-indoors-500x486.jpeg"
     },
     {
         name: "Json",
-        description:"Json is a happy go lucky pup who will protect your home.They are good with children, dogs,and cats. He is neutered with no special needs.",
+        description:"Json is a happy go lucky pup who will protect your home.",
         type: "Dog",
         breed: "German Shepard",
         size: "Large" ,
         age: "Young",
         house_size: "Large",
         good_with_children: true,
-        good_with_dogs:true,
+        good_with_dogs:false,
         good_with_cats:true,
         has_yard: true ,
         has_claws: true,
         spayed: true,
         special_needs: false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F08%2F15%2Frunning-german-shepherd-1147953994-2000.jpg"
     },
     {
@@ -50,6 +52,7 @@ const petsdata = [
         has_claws: true,
         spayed: true,
         special_needs:true,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://www.purinaproclub.com/sites/g/files/auxxlc346/files/styles/large/public/German%20Shepherd%201%20gsd_043007_hp_md_2.jpg"
     },
     {
@@ -67,6 +70,7 @@ const petsdata = [
         has_claws: true,
         spayed: true,
         special_needs: false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://figopetinsurance.com/sites/default/files/styles/blog_detail/public/imagedogsenglish-bulldog-just-being-adorable-porchblog.jpg?itok=BYHC4a-o"
     },
     {
@@ -84,6 +88,7 @@ const petsdata = [
         has_claws: true,
         spayed: true,
         special_needs:true,
+        phone_number:"(xxx)xxx-xxxx",
         image_url: "https://scx2.b-cdn.net/gfx/news/hires/2021/someenglishb.jpg"
     },
     {
@@ -101,6 +106,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://vetstreet.brightspotcdn.com/dims4/default/e23e4d4/2147483647/thumbnail/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2F1f%2F92%2Feb11c793404c89e0cab23d9da64a%2FAP-0RHRMQ-ph645080113.jpg"
     },
     {
@@ -118,6 +124,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://www.petlandflorida.com/wp-content/uploads/2021/01/Petland_Florida_Toy_Poodle.jpg"
     },
     {
@@ -135,6 +142,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:true,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://www.bil-jac.com/media/0eqnqiyn/toy-poodle-1140459180.jpg"
     },
     {
@@ -152,6 +160,7 @@ const petsdata = [
         has_claws: true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://www.allthingsdogs.com/wp-content/uploads/2019/08/Toy-Poodle-Feature.jpg"
     },
     {
@@ -169,6 +178,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://thumbs-prod.si-cdn.com/omtxDUbVWafbhOTsDFJnOW3gFiw=/fit-in/1600x0/filters:focal(2135x711:2136x712)/https://public-media.si-cdn.com/filer/77/8b/778bb007-831c-4c81-a475-05487cd7b53b/adult-brown-labrador-retriever-1010121_3.jpg"
     },
     {
@@ -186,6 +196,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://www.bil-jac.com/media/j1hodeqf/labrador-962177576.jpg"
     },
     {
@@ -203,6 +214,7 @@ const petsdata = [
         has_claws: true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://s36700.pcdn.co/wp-content/uploads/2019/01/Yellow-Labrador-Retriever-happy-in-grass--600x400.jpg.optimal.jpg"
     },
     {
@@ -220,6 +232,7 @@ const petsdata = [
         has_claws: true,
         spayed: true,
         special_needs:true,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://www.keystonepuppies.com/wp-content/uploads/2019/04/Simba-Yellow-Lab-2-1024x730.jpg"
     },
     {
@@ -237,6 +250,7 @@ const petsdata = [
         has_claws: true,
         spayed: true,
         special_needs: false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://s36700.pcdn.co/wp-content/uploads/2015/05/shutterstock_1741426311.jpg.optimal.jpg"
     },
     {
@@ -254,6 +268,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:true,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://www.thesprucepets.com/thmb/Kh-xt27-hqeQzhyr9288cl_P64I=/1396x1396/smart/filters:no_upscale()/twenty20_f84c633e-705e-4bf8-a724-00cdea750d8d-590b51893df78c92837b18d6.jpg"
     },
     {
@@ -271,6 +286,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2021%2F03%2F09%2Fchihuahua-laying-down-wooden-floor-1675701502-2000.jpg"
     },
     {
@@ -288,6 +304,7 @@ const petsdata = [
         has_claws: true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://www.loveyourdog.com/wp-content/uploads/2020/04/Chihuahua-Relaxing-Indoors.jpg"
     },
     {
@@ -305,6 +322,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://www.petmd.com/sites/default/files/2020-11/picture-of-golden-retriever-dog_0.jpg"
     },
     {
@@ -322,6 +340,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://media1.popsugar-assets.com/files/thumbor/fe_TEBbRM3ZlH2WR2P-pI5hbqSI/876x0:4381x3505/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2019/12/18/763/n/46902966/4759e2855dfa5f7c857892.88399573_/i/what-kind-health-problems-do-golden-retrievers-have.jpg"
     },
     {
@@ -339,6 +358,7 @@ const petsdata = [
         has_claws: true,
         spayed: true,
         special_needs:true,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://nationaltoday.com/wp-content/uploads/2020/02/national-golden-retriever-day.jpg"
     },
     {
@@ -356,6 +376,7 @@ const petsdata = [
         has_claws: true,
         spayed: true,
         special_needs: true,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://cdn11.bigcommerce.com/s-fduu8evurl/product_images/uploaded_images/blue.jpg"
     },
     {
@@ -373,6 +394,7 @@ const petsdata = [
         has_claws: true,
         spayed: true,
         special_needs: false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://upload.wikimedia.org/wikipedia/commons/1/18/2008-07-28_Dog_at_Frolick_Field.jpg"
     },
     {
@@ -390,6 +412,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://www.thesprucepets.com/thmb/7nOH4fSTB7GIL6ApI6cxjE7OYf4=/1500x844/smart/filters:no_upscale()/breed_profile_frenchbulldog_1117966_hero_1653-3e51f64b939c411e8f5d68d1d2a5aad2.jpg"
     },
     {
@@ -407,6 +430,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://www.loveyourdog.com/wp-content/uploads/2020/04/Siberian-Husky-in-Snow-900x500.jpg"
     },
     {
@@ -424,6 +448,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://www.insidedogsworld.com/wp-content/uploads/2016/12/husky10.jpg"
     },
     {
@@ -441,6 +466,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://vetstreet-brightspot.s3.amazonaws.com/a9/f54ad0a80611e0a0d50050568d634f/file/Siberian-Husky-4-645mk062811.jpg"
     },
     {
@@ -458,6 +484,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://i1.wp.com/nypost.com/wp-content/uploads/sites/2/2020/04/pugs-coronavirus.jpg?quality=80&strip=all&ssl=1"
     },
     {
@@ -475,6 +502,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F08%2F16%2Fpug-sleeping-868008896-2000.jpg"
     },
     {
@@ -492,6 +520,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://i.guim.co.uk/img/media/504ea0b829df61cbc2ac689e07fbe5ff76cd4afe/2_391_2011_1207/master/2011.jpg?width=1200&quality=85&auto=format&fit=max&s=796761e4c2b8674a813c2dc702d93042"
     },
     {
@@ -509,6 +538,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://a-z-animals.com/media/2018/09/Dachshund-on-bed.jpg"
     },
     {
@@ -526,6 +556,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://formydachshund.com/wp-content/uploads/2019/12/Depositphotos_320885450_ots_photo_web-800x600.jpg"
     },
     {
@@ -543,6 +574,7 @@ const petsdata = [
         has_claws: true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://i.pinimg.com/736x/f8/9f/b4/f89fb42694a53fafb1c098973319653b.jpg"
     },
     {
@@ -560,6 +592,7 @@ const petsdata = [
         has_claws: false,
         spayed: true,
         special_needs: false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://media-be.chewy.com/wp-content/uploads/2021/06/16153832/AustralianCattleDog-FeaturedImage.jpg"
     },
     {
@@ -577,6 +610,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:true,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://res.cloudinary.com/petrescue/image/upload/v1624335566/bwhapydgiwju69hsyr4d.jpg"
     },
     {
@@ -594,6 +628,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://homesteadontherangesite.files.wordpress.com/2021/04/c0ac1-acdog2.jpg"
     },
     {
@@ -611,6 +646,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://dogtime.com/assets/uploads/gallery/samoyed-dogs-and-puppies/samoyed-dogs-puppies-1.jpg"
     },
     {
@@ -628,6 +664,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://www.purinaproclub.com/sites/g/files/auxxlc346/files/styles/social_share_large/public/Kegs_Thumbnail.jpg?itok=yIRyCEyu"
     },
     {
@@ -645,6 +682,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://highlandcanine.com/wp-content/uploads/2021/05/yorkshire-terrier-sitting-on-decking.jpg"
     },
     {
@@ -662,6 +700,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:true,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://www.espree.com/sites/default/files/2019-10/YorkshireTerrier.jpg.png"
     },
     {
@@ -679,6 +718,7 @@ const petsdata = [
         has_claws: true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/01125304/Yorkshire-Terrier-laying-down-outdoors.jpg"
     },
     {
@@ -696,6 +736,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://vetstreet.brightspotcdn.com/dims4/default/016b763/2147483647/crop/0x0%2B0%2B0/resize/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2Fde%2F7def60a7fb11e0a0d50050568d634f%2Ffile%2FRottweiler-5-645mk062811.jpg"
     },
     {
@@ -713,6 +754,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkPUNsnem0b7KvR5g6R2oFChGvLf-wvUf0Wg&usqp=CAU"
     },
     {
@@ -730,6 +772,7 @@ const petsdata = [
         has_claws: true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/02173451/Great-Dane-standing-in-a-fenced-field.jpg"
     },
     {
@@ -747,6 +790,7 @@ const petsdata = [
         has_claws: true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://petkeen.com/wp-content/uploads/2021/06/great-dane_Earl-Wilkerson_Shutterstock.jpg"
     },
     {
@@ -764,6 +808,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://chfa.net/images/2020_blogs/Gastropexy/harlie_gastropexy_bloat_great_dane_2.png"
     },
     {
@@ -781,6 +826,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://media-be.chewy.com/wp-content/uploads/2021/06/02102132/Pomeranian_Featured-Image.jpg"
     },
     {
@@ -798,7 +844,8 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:true,
-        image_url:"chttps://vetstreet-brightspot.s3.amazonaws.com/58/35/8cdde1f54ad986b94f1cdfebd990/pomeranian-AP-0BISNY-645sm8513.jpg"
+        phone_number:"(xxx)xxx-xxxx",
+        image_url:"https://vetstreet-brightspot.s3.amazonaws.com/58/35/8cdde1f54ad986b94f1cdfebd990/pomeranian-AP-0BISNY-645sm8513.jpg"
     },
     {
         name: "Shadow",
@@ -815,6 +862,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url: "https://www.allthingsdogs.com/wp-content/uploads/2019/12/Black-Pomeranian-Feature.jpg"
     },
     {
@@ -832,6 +880,7 @@ const petsdata = [
         has_claws: true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://www.thesprucepets.com/thmb/dbGjqFB3KmYs6UXZYiAG7FN8hxs=/897x862/filters:fill(auto,1)/Capture-1cf88e4ad81548fe90a3887b81df64c2.PNG"
     },
     {
@@ -849,6 +898,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://i.postimg.cc/26KNGmdc/dulce.jpg"
     },
     {
@@ -866,6 +916,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://i.postimg.cc/G2DzZx3c/IMG-20210803-135405853.jpg"
     },
     {
@@ -883,6 +934,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://i.postimg.cc/KYMnzc6f/IMG-20210707-152506202.jpg"
     },
     {
@@ -900,6 +952,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:true,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://i.postimg.cc/3N0NCtGG/20200525-173917.jpg"
     },
     {
@@ -917,6 +970,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:true,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://i.postimg.cc/Gm03Rcjd/IMG-20190818-010521251.jpg"
     },
     {
@@ -934,6 +988,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:true,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://i.postimg.cc/XJd7rr6K/20200525-163826.jpg"
     },
     {
@@ -951,6 +1006,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://i.postimg.cc/gYRJ47Zx/DanDan.jpg"
     },
     {
@@ -968,6 +1024,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://i.postimg.cc/t4j3CdnQ/ED93-AD1-D-8060-45-FD-8-F79-63-AB9-B7-DD2-E1.jpg"
     },
     {
@@ -985,6 +1042,7 @@ const petsdata = [
         has_claws:true,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://i.postimg.cc/QC77jVXd/0-EF7-CE45-C063-4-D7-E-AC33-31-ECCE8-EB6-EB.jpg"
     },
     {
@@ -1002,8 +1060,341 @@ const petsdata = [
         has_claws:false,
         spayed: true,
         special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
         image_url:"https://i.postimg.cc/NM3yCY1q/18-C1-A68-B-4-F0-B-4-BA9-B96-D-BF0750634-FAD.jpg"
-    }
+    },
+    {
+        name: "Pumpkin" ,
+        description: "A spunky young pup who loves cats but is not a fan of other dogs. He will need to be spayed.",
+        type: "Dog" ,
+        breed: "Cocker Spaniel",
+        size: "Medium" ,
+        age: "Baby" ,
+        house_size: "Small",
+        good_with_children: true,
+        good_with_dogs: false,
+        good_with_cats:true,
+        has_yard: false,
+        has_claws: true,
+        spayed: false,
+        special_needs: false ,
+        phone_number:"(xxx)xxx-xxxx",
+        image_url:"https://a-z-animals.com/media/2019/10/American-Cocker-Spaniel-puppy.jpg"
+    },
+    {
+        name: "Pond" ,
+        description:"Nobody loves trash like pond. He is good around other dogs and kids but does not like cats.",
+        type: "Dog" ,
+        breed: "Cocker Spaniel" ,
+        size: "Medium" ,
+        age: "Adult" ,
+        house_size: "Small",
+        good_with_children: true,
+        good_with_dogs: true,
+        good_with_cats:false,
+        has_yard: false,
+        has_claws: true,
+        spayed: true,
+        special_needs: false ,
+        phone_number:"(xxx)xxx-xxxx",
+        image_url:"https://www.purina.com.au/-/media/project/purina/main/breeds/dog/dog_american-cocker-spaniel_desktop.jpg?h=475&la=en&w=825&hash=CA9E38C5A3E1A389A588DF581C066E28"
+    },
+    {
+        name: "Rosco" ,
+        description:"An easy going older guy who loves belly rubs. He loves being an only pet.",
+        type: "Dog" ,
+        breed: "Cocker Spaniel" ,
+        size: "Medium" ,
+        age: "Senior",
+        house_size:"Small",
+        good_with_children: false,
+        good_with_dogs: false,
+        good_with_cats:false,
+        has_yard: false,
+        has_claws: true,
+        spayed: true,
+        special_needs: false ,
+        phone_number:"(xxx)xxx-xxxx",
+        image_url:"https://i2.wp.com/barkercise.com/wp-content/uploads/2021/02/gettyimages-584973021-612x612-1.jpg?fit=612%2C408&ssl=1"
+    },
+    {
+        name: "Copper" ,
+        description: "A smart young girl who loves to learn. She is hard of hearing but still easy to be around.",
+        type: "Dog" ,
+        breed: "Cocker Spaniel",
+        size: "Medium" ,
+        age: "Young" ,
+        house_size: "Small",
+        good_with_children: true,
+        good_with_dogs: true,
+        good_with_cats:true,
+        has_yard: true,
+        has_claws: true,
+        spayed: true,
+        special_needs: true ,
+        phone_number:"(xxx)xxx-xxxx",
+        image_url:"https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2021%2F06%2F16%2Fcocker-spaniel-on-bed-233218901-2000.jpg"
+    },
+    {
+        name: "Oreo" ,
+        description:"Oreo came from a resuce situation and is being treated for heart worms. He is a sweet boy who just needs some love.",
+        type: "Dog" ,
+        breed: "Cocker Spaniel" ,
+        size: "Medium"  ,
+        age: "Adult" ,
+        house_size: "Small",
+        good_with_children: true,
+        good_with_dogs: true,
+        good_with_cats:false,
+        has_yard: true,
+        has_claws: true,
+        spayed: true,
+        special_needs: true ,
+        phone_number:"(xxx)xxx-xxxx",
+        image_url:"https://g77v3827gg2notadhhw9pew7-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/CSFT2-1-1024x682.jpg"
+    },
+    {
+        name: "Cupcake" ,
+        description:"A fully grown girl who loves to cuddle.",
+        type: "Dog" ,
+        breed: "Cavalier King Charles Spaniel",
+        size: "Small" ,
+        age: "Adult" ,
+        house_size:"Small",
+        good_with_children: true,
+        good_with_dogs: false,
+        good_with_cats:false,
+        has_yard: false,
+        has_claws: true,
+        spayed: true,
+        special_needs: false ,
+        phone_number:"(xxx)xxx-xxxx",
+        image_url:"https://dogtime.com/assets/uploads/gallery/cavalier-king-charles-spaniel-dog-breed-pictures/6-sittingforward.jpg"
+    },
+    {
+        name: "King" ,
+        description:"A easy going guy who is the king of the house.",
+        type: "Dog" ,
+        breed: "Cavalier King Charles Spaniel",
+        size: "Small" ,
+        age: "Young" ,
+        house_size:"Small",
+        good_with_children: false,
+        good_with_dogs: false,
+        good_with_cats:false,
+        has_yard: false,
+        has_claws: true,
+        spayed: false,
+        special_needs: false ,
+        phone_number:"(xxx)xxx-xxxx",
+        image_url:"https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2009/01/06180034/Cavalier-King-Charles-Spaniel-head-portrait-outdoors.jpg"
+    },
+    {
+        name: "Dalek" ,
+        description:"Part of a litter of 6 young puppies. He will grow to be a beautiful boy.",
+        type: "Dopg" ,
+        breed: "Cavalier King Charles Spaniel" ,
+        size: "Small" ,
+        age: "Baby",
+        house_size:"Small",
+        good_with_children: false,
+        good_with_dogs: false,
+        good_with_cats: false,
+        has_yard: false,
+        has_claws: true,
+        spayed: false,
+        special_needs: false ,
+        phone_number:"(xxx)xxx-xxxx",
+        image_url:"https://www.keystonepuppies.com/wp-content/uploads/2018/09/Cavalier-1.jpg"
+    },
+    {
+        name: "Diamond" ,
+        description:"A young pup who just finished going to puppy school and loves to learn. She has diabetes and requires extra care",
+        type: "Dog" ,
+        breed: "Cavalier King Charles Spaniel" ,
+        size: "Small" ,
+        age: "Young",
+        house_size:"Small",
+        good_with_children: false,
+        good_with_dogs: true,
+        good_with_cats:true,
+        has_yard: false,
+        has_claws: true,
+        spayed: false,
+        special_needs: true ,
+        phone_number:"(xxx)xxx-xxxx",
+        image_url:"https://i.pinimg.com/originals/26/73/07/267307e591a48e753a9d325f075d2b95.jpg"
+    },
+    {
+        name: "Ruby" ,
+        description: "A big dog who is an even bigger goober.",
+        type: "Dog" ,
+        breed: "Mastiff",
+        size: "Large" ,
+        age: "Adult" ,
+        house_size:"Large",
+        good_with_children: false,
+        good_with_dogs: false,
+        good_with_cats:false,
+        has_yard: true,
+        has_claws: true,
+        spayed: false,
+        special_needs: false ,
+        phone_number:"(xxx)xxx-xxxx",
+        image_url:"https://vetstreet.brightspotcdn.com/dims4/default/01960a2/2147483647/thumbnail/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2F0e%2Ffb0610a10711e087a80050568d634f%2Ffile%2FMastiff-2-645mk062111.jpg"
+    },
+    {
+        name: "Mr. Filch" ,
+        description:"A large boy who loves cats.",
+        type: "Dog" ,
+        breed: "Mastiff" ,
+        size: "Large" ,
+        age: "Young",
+        house_size:"Large",
+        good_with_children: false,
+        good_with_dogs: true,
+        good_with_cats:true,
+        has_yard: true,
+        has_claws: true,
+        spayed: true,
+        special_needs: true ,
+        phone_number:"(xxx)xxx-xxxx",
+        image_url:"https://www.akc.org/wp-content/uploads/2017/03/mastiff_breeds_hero.jpg"
+    },
+     {
+        name: "Rose",
+        description:"A sweet girl who has special needs and prefers to live alone.",
+        type: "Dog",
+        breed: "Mastiff",
+        size: "Large" ,
+        age: "Senior",
+        house_size: "Large",
+        good_with_children: false,
+        good_with_dogs:false,
+        good_with_cats:false,
+        has_yard: true ,
+        has_claws:true,
+        spayed: true,
+        special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
+        image_url:"https://i.pinimg.com/originals/33/b8/2c/33b82caf9509ddad87aa762e5f07dfd9.png"
+    },
+    {
+        name: "Midnight",
+        description:"A long haired girl who will need to br brushed often.",
+        type: "Dog" ,
+        breed: "Newfoundland" ,
+        size: "Large",
+        age: "Young",
+        house_size: "Large",
+        good_with_children: true,
+        good_with_dogs:false,
+        good_with_cats:true,
+        has_yard: true ,
+        has_claws:true,
+        spayed: true,
+        special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
+        image_url:"https://upload.wikimedia.org/wikipedia/commons/a/a5/Newfoundland_dog_Smoky.jpg"
+    },
+
+    {
+        name:"Fang",
+        description:"Don't be fooled by his name, Fang is a sweet boy who loves to be a lap dog.",
+        type:"Dog" ,
+        breed: "Newfoundland" ,
+        size: "Large" ,
+        age: "Adult",
+        house_size: "Large" ,
+        good_with_children: false,
+        good_with_dogs:true,
+        good_with_cats:false,
+        has_yard: true,
+        has_claws:true,
+        spayed: false,
+        special_needs:false,
+        phone_number:"(xxx)xxx-xxxx",
+        image_url:"https://www.allthingsdogs.com/wp-content/uploads/2020/02/Newfoundland-Dog.jpg"
+    },
+
+    {
+        name: "Patches",
+        description:"A large girl who loves to run and lay in the sun.",
+        type: "Dog",
+        breed: "Newfoundland" ,
+        size:  "Large",
+        age: "Senior",
+        house_size: "Large" ,
+        good_with_children: true,
+        good_with_dogs:true,
+        good_with_cats:true,
+        has_yard: true,
+        has_claws:true,
+        spayed: true,
+        special_needs:true,
+        phone_number:"(xxx)xxx-xxxx",
+        image_url:"https://s36700.pcdn.co/wp-content/uploads/2015/05/newfoundland-black-white.jpg.optimal.jpg"
+    },
+
+    {
+        name: "Chowder",
+        description:"A large dog who was built to run and love people. He is not a fan of other dogs.",
+        type: "Dog",
+        breed: "St Bernard" ,
+        size: "Large",
+        age: "Young",
+        house_size:"Large" ,
+        good_with_children: false,
+        good_with_dogs:false,
+        good_with_cats:true,
+        has_yard: true,
+        has_claws:true,
+        spayed: true,
+        special_needs:true,
+        phone_number:"(xxx)xxx-xxxx",
+        image_url:"https://vetstreet.brightspotcdn.com/dims4/default/1d4a79d/2147483647/crop/0x0%2B0%2B0/resize/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2F92%2F94d720a7fc11e0a0d50050568d634f%2Ffile%2FSaint-bernard-3-645mk062811.jpg"
+    },
+
+    {
+        name: "Cascades",
+        description:"A mountain dog who loves to hike.",
+        type: "Dog",
+        breed: "St Bernard" ,
+        size: "Large",
+        age: "Adult" ,
+        house_size:"Large" ,
+        good_with_children: false,
+        good_with_dogs:false,
+        good_with_cats:false,
+        has_yard: true,
+        has_claws:true,
+        spayed: false,
+        special_needs:true,
+        phone_number:"(xxx)xxx-xxxx",
+        image_url:"https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/19181856/Saint-Bernard-laying-down-in-the-grass.jpg"
+    },
+
+    {
+        name: "Whiskey" ,
+        description:"A young puppy who is very energetic and loves to paly. She was born blind.",
+        type: "Dog" ,
+        breed: "St Bernard",
+        size: "Large",
+        age: "Baby",
+        house_size: "Large",
+        good_with_children: true,
+        good_with_dogs:true,
+        good_with_cats:true,
+        has_yard: true,
+        has_claws:true,
+        spayed: false,
+        special_needs:true,
+        phone_number:"(xxx)xxx-xxxx",
+        image_url:"https://images.ctfassets.net/ub3bwfd53mwy/3nRF2ioESX4kgRbhD2utoQ/4604345554be72dea5c542752fba240c/Gabapentin_for_cats__22_.png"
+    },
+
+
+
 ]
 
 

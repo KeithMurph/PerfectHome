@@ -25,10 +25,7 @@ User.init({
         allowNull:false,
         unique:true
     },
-    zipcode:{
-        type:DataTypes.INTEGER,
-        allowNull:false
-    }
+   
 },
 {
     hooks: {

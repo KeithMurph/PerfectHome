@@ -18,25 +18,25 @@ const seedDatabase = async () => {
       username: "keith",
       email: "keith@keith.keith",
       password: "password",
-      zipcode: "98077"
+   
     },
     {
       username: "Meg",
       email: "Meg@meg.meg",
       password: "password",
-      zipcode: "98077"
+    
     },
     {
       username: "karen",
       email: "karen@karen.karen",
       password: "password",
-      zipcode: "98077"
+      
     },
     {
       username: "connor",
       email: "connor@connor.connor",
       password: "password",
-      zipcode: "98077"
+   
     }
   ],
   {

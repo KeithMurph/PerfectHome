@@ -1,27 +1,28 @@
+<div class="all">
 <form class="breed-info-form" method="GET" >
-    <div class="form-group">
+    <div class="form-group spacing">
         <label id="breed-name">
             Search by Breed Name:         
         </label>
         <input class="form-input" type="text" name="breed" id="breed-info" />
-         <button class="btn btn-primary" id="dog-breed-btn">Enter</button>
+         <button id="dog-breed-btn">Enter</button>
     </div>
-
 </form>
+</div>
 
 <div class="all">
 <div id="breed-card">
     <div>
-        <img src="{{image_url}}" alt="dog picture" height="300px">
+        <img src="{{petsdata.image_url}}" alt="dog picture" height="300px">
     </div>
     <h2>Breed</h2>
-    <p>{{breed}}</p>
+    <p>{{petsdata.breed}}</p>
     <h3>Size</h3> 
-    <p>{{size}}</p>
+    <p>{{petsdata.size}}</p>
     <h3>Home Requirement </h3> 
-    <p>{{home_requirement}}</p>
+    <p>{{petsdata.home_requirement}}</p>
     <h3>Temperament</h3> 
-    <p>{{temperament}}</p>
+    <p>{{petsdata.temperament}}</p>
    
 </div>
 </div>

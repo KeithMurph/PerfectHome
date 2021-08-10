@@ -121,7 +121,7 @@ router.get("/profile/:id",(req,res)=>{
 router.get("/breeds/:breed",(req,res)=> {
   db.Breed.findByPk(req.params.breed).then(breed=>{
     const breedJson = breed.get({plain:true})
-    res.render("breedCard", breedJson)
+    res.render("breedCard", {petsdata:breedJson, logged_inr: req.session.user})
       // // console.log("breed:",breedJson.breed)
       // res.render("breedCard", breedJson);
       // res.json(breed.dataValue.breed)

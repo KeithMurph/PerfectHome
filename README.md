@@ -20,7 +20,7 @@ SO THAT I can browse available pets that are suited for me and my family
  - [Mock Up] (#mockUp)
  - [Usage](#usage)
  - [Credits](#credits)
- - [Licence](#license)
+ - [License](#license)
  - [Questions](#questions)
 
  ## Installation
